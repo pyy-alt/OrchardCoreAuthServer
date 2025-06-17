@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrchardCoreAuthServer", "OrchardCoreAuthServer\OrchardCoreAuthServer.csproj", "{5949D0DA-482E-49F5-ADFE-3E38563A81EA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5949D0DA-482E-49F5-ADFE-3E38563A81EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5949D0DA-482E-49F5-ADFE-3E38563A81EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5949D0DA-482E-49F5-ADFE-3E38563A81EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5949D0DA-482E-49F5-ADFE-3E38563A81EA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
