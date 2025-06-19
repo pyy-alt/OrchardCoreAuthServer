@@ -10,64 +10,64 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Turkish\n"
 "Language: tr_TR\n"
-"PO-Revision-Date: 2024-09-09 17:03\n"
+"PO-Revision-Date: 2023-08-17 17:25\n"
 
 #. .Add(S["Configuration"], configuration => configuration
-#: OrchardCore.Facebook\AdminMenu.cs:25
+#: OrchardCore.Facebook\AdminMenu.cs:26
 msgctxt "OrchardCore.Facebook.AdminMenu"
 msgid "Configuration"
 msgstr "Yapılandırma"
 
 #. .Add(S["Settings"], settings => settings
-#: OrchardCore.Facebook\AdminMenu.cs:26
+#: OrchardCore.Facebook\AdminMenu.cs:27
 msgctxt "OrchardCore.Facebook.AdminMenu"
 msgid "Settings"
 msgstr "Ayarlar"
 
-#. .Add(S["Meta App"], S["Meta App"].PrefixPosition(), metaApp => metaApp
-#. .Add(S["Meta App"], S["Meta App"].PrefixPosition(), metaApp => metaApp
-#: OrchardCore.Facebook\AdminMenu.cs:27
-#: OrchardCore.Facebook\AdminMenu.cs:27
+#. .Add(S["Meta App"], S["Meta App"].PrefixPosition(), facebook => facebook
+#. .Add(S["Meta App"], S["Meta App"].PrefixPosition(), facebook => facebook
+#: OrchardCore.Facebook\AdminMenu.cs:28
+#: OrchardCore.Facebook\AdminMenu.cs:28
 msgctxt "OrchardCore.Facebook.AdminMenu"
 msgid "Meta App"
 msgstr "Meta App"
 
 #. .Add(S["Security"], security => security
-#: OrchardCore.Facebook\AdminMenuLogin.cs:25
+#: OrchardCore.Facebook\AdminMenu.cs:60
 msgctxt "OrchardCore.Facebook.AdminMenuLogin"
 msgid "Security"
 msgstr "Güvenlik"
 
 #. .Add(S["Authentication"], authentication => authentication
-#: OrchardCore.Facebook\AdminMenuLogin.cs:26
+#: OrchardCore.Facebook\AdminMenu.cs:61
 msgctxt "OrchardCore.Facebook.AdminMenuLogin"
 msgid "Authentication"
 msgstr "Kimlik Doğrulama"
 
-#. .Add(S["Meta"], S["Meta"].PrefixPosition(), meta => meta
-#. .Add(S["Meta"], S["Meta"].PrefixPosition(), meta => meta
-#: OrchardCore.Facebook\AdminMenuLogin.cs:27
-#: OrchardCore.Facebook\AdminMenuLogin.cs:27
+#. .Add(S["Meta"], S["Meta"].PrefixPosition(), settings => settings
+#. .Add(S["Meta"], S["Meta"].PrefixPosition(), settings => settings
+#: OrchardCore.Facebook\AdminMenu.cs:62
+#: OrchardCore.Facebook\AdminMenu.cs:62
 msgctxt "OrchardCore.Facebook.AdminMenuLogin"
 msgid "Meta"
 msgstr "Meta"
 
 #. .Add(S["Configuration"], configuration => configuration
-#: OrchardCore.Facebook\AdminMenuPixel.cs:26
+#: OrchardCore.Facebook\AdminMenu.cs:94
 msgctxt "OrchardCore.Facebook.AdminMenuPixel"
 msgid "Configuration"
 msgstr "Yapılandırma"
 
 #. .Add(S["Settings"], settings => settings
-#: OrchardCore.Facebook\AdminMenuPixel.cs:27
+#: OrchardCore.Facebook\AdminMenu.cs:95
 msgctxt "OrchardCore.Facebook.AdminMenuPixel"
 msgid "Settings"
 msgstr "Ayarlar"
 
 #. .Add(S["Meta Pixel"], S["Meta Pixel"].PrefixPosition(), pixel => pixel
 #. .Add(S["Meta Pixel"], S["Meta Pixel"].PrefixPosition(), pixel => pixel
-#: OrchardCore.Facebook\AdminMenuPixel.cs:28
-#: OrchardCore.Facebook\AdminMenuPixel.cs:28
+#: OrchardCore.Facebook\AdminMenu.cs:96
+#: OrchardCore.Facebook\AdminMenu.cs:96
 msgctxt "OrchardCore.Facebook.AdminMenuPixel"
 msgid "Meta Pixel"
 msgstr "Meta Pixel"
@@ -79,19 +79,19 @@ msgid "Invalid path"
 msgstr "Geçersiz yol"
 
 #. results.Add(new ValidationResult(S["The AppId is required."], new[]
-#: OrchardCore.Facebook\Services\FacebookService.cs:43
+#: OrchardCore.Facebook\Services\FacebookService.cs:55
 msgctxt "OrchardCore.Facebook.Services.FacebookService"
 msgid "The AppId is required."
 msgstr "AppId zorunlu."
 
 #. results.Add(new ValidationResult(S["The App Secret is required."], new[]
-#: OrchardCore.Facebook\Services\FacebookService.cs:51
+#: OrchardCore.Facebook\Services\FacebookService.cs:63
 msgctxt "OrchardCore.Facebook.Services.FacebookService"
 msgid "The App Secret is required."
 msgstr "App Secret zorunlu."
 
-#. context.Updater.ModelState.AddModelError(nameof(model.Liquid), S["The FaceBook Body doesn't contain a valid Liquid expression. Details: {0}", string.Join(" ", errors)]);
-#: OrchardCore.Facebook\Widgets\Drivers\FacebookPluginPartDisplayDriver.cs:78
+#. updater.ModelState.AddModelError(nameof(model.Liquid), S["The FaceBook Body doesn't contain a valid Liquid expression. Details: {0}", string.Join(" ", errors)]);
+#: OrchardCore.Facebook\Widgets\Drivers\FacebookPluginPartDisplayDriver.cs:85
 msgctxt "OrchardCore.Facebook.Widgets.Drivers.FacebookPluginPartDisplayDriver"
 msgid "The FaceBook Body doesn't contain a valid Liquid expression. Details: {0}"
 msgstr "Facebook gövdesi geçerli bir Liquid ifadesi içermiyor. Ayrıntılar: {0}"
@@ -132,11 +132,11 @@ msgctxt "OrchardCore.Facebook.Views.Items.FacebookLoginDeploymentStep.Thumbnail"
 msgid "Exports the Facebook Login settings."
 msgstr "Facebook Giriş ayarlarını dışa aktar."
 
-#. @T["The website might be restarted upon saving the settings, potentially leading to temporary unresponsiveness during the process."]
+#. @T["The current tenant will be reloaded when the settings are saved."]
 #: OrchardCore.Facebook\Views\FacebookLoginSettings.Edit.cshtml:5
 msgctxt "OrchardCore.Facebook.Views.FacebookLoginSettings.Edit"
-msgid "The website might be restarted upon saving the settings, potentially leading to temporary unresponsiveness during the process."
-msgstr ""
+msgid "The current tenant will be reloaded when the settings are saved."
+msgstr "Ayarlar kaydedildiğinde mevcut tanent yeniden yüklenir."
 
 #. <a class="seedoc" href="@(OrchardCore.Admin.Constants.DocsUrl)reference/modules/Facebook/#facebook-login" target="_blank">@T["See documentation"]</a>
 #: OrchardCore.Facebook\Views\FacebookLoginSettings.Edit.cshtml:6
@@ -150,7 +150,7 @@ msgctxt "OrchardCore.Facebook.Views.FacebookLoginSettings.Edit"
 msgid "Login Settings"
 msgstr "Oturum açma ayarları"
 
-#. <label asp-for="CallbackPath" class="form-label">@T["CallbackPath"]</label>
+#. <label>@T["CallbackPath"]</label>
 #: OrchardCore.Facebook\Views\FacebookLoginSettings.Edit.cshtml:12
 msgctxt "OrchardCore.Facebook.Views.FacebookLoginSettings.Edit"
 msgid "CallbackPath"
@@ -162,7 +162,7 @@ msgctxt "OrchardCore.Facebook.Views.FacebookLoginSettings.Edit"
 msgid "The request path within the application's base path where the user-agent will be returned. The middleware will process this request when it arrives."
 msgstr "Kullanıcı-ajanının döneceği uygulamanın temel yolundaki istek yoludur. Ara katman bu istek ulaştığında işleme koyacaktır."
 
-#. <label class="form-check-label" class="form-label" asp-for="SaveTokens">@T["Store tokens"]</label>
+#. <label class="form-check-label" asp-for="SaveTokens">@T["Store tokens"]</label>
 #: OrchardCore.Facebook\Views\FacebookLoginSettings.Edit.cshtml:21
 msgctxt "OrchardCore.Facebook.Views.FacebookLoginSettings.Edit"
 msgid "Store tokens"
@@ -174,13 +174,13 @@ msgctxt "OrchardCore.Facebook.Views.FacebookLoginSettings.Edit"
 msgid "Store external authentication tokens for reuse"
 msgstr "Yeniden kullanım için harici kimlik doğrulama belirteçlerini saklayın"
 
-#. <span class="hint">@T["<a href=\"{0}\">Meta Integration settings</a> must be configured in order to use the Login Feature", @Url.RouteUrl(new { area = "OrchardCore.Settings", controller = "Admin", groupId = OrchardCore.Facebook.FacebookConstants.Features.Core })]</span>
+#. <span class="hint">@T["<a href=\"{0}\">Meta Integration settings</a> must be configured in order to use the Login Feature",@Url.RouteUrl(new { area = "OrchardCore.Settings", controller = "Admin", groupId = OrchardCore.Facebook.FacebookConstants.Features.Core })]</span>
 #: OrchardCore.Facebook\Views\FacebookLoginSettings.Edit.cshtml:27
 msgctxt "OrchardCore.Facebook.Views.FacebookLoginSettings.Edit"
 msgid "<a href=\"{0}\">Meta Integration settings</a> must be configured in order to use the Login Feature"
 msgstr "Giriş özelliğini kullanmak için <a href=\"{0}\">Meta Entegrasyon Ayarları</a> yapılandırılmalıdır"
 
-#. <label asp-for="PixelId" class="form-label">@T["Pixel Identifier"]</label>
+#. <label>@T["Pixel Identifier"]</label>
 #: OrchardCore.Facebook\Views\FacebookPixelSettings.Edit.cshtml:6
 msgctxt "OrchardCore.Facebook.Views.FacebookPixelSettings.Edit"
 msgid "Pixel Identifier"
@@ -192,7 +192,7 @@ msgctxt "OrchardCore.Facebook.Views.FacebookPixelSettings.Edit"
 msgid "The Pixel ID found on the Meta Data Sources portal."
 msgstr "Meta Veri Kaynakları portalında bulunan Piksel Kimliği."
 
-#. <label asp-for="Liquid" class="@Orchard.GetLabelClasses()">@T["Body"]</label>
+#. <label asp-for="Liquid" class="@Orchard.GetLabelCssClasses()">@T["Body"]</label>
 #: OrchardCore.Facebook\Views\FacebookPluginPart.Edit.cshtml:13
 msgctxt "OrchardCore.Facebook.Views.FacebookPluginPart.Edit"
 msgid "Body"
@@ -204,7 +204,7 @@ msgctxt "OrchardCore.Facebook.Views.FacebookPluginPart.Edit"
 msgid "The template of the plugin, in Liquid format."
 msgstr "Liquid formatdaki plugin'in template'i."
 
-#. <label asp-for="Liquid" class="form-label">@T["Body"]</label>
+#. <label asp-for="Liquid">@T["Body"]</label>
 #: OrchardCore.Facebook\Views\FacebookPluginPartSettings.Edit.cshtml:13
 msgctxt "OrchardCore.Facebook.Views.FacebookPluginPartSettings.Edit"
 msgid "Body"
@@ -216,11 +216,11 @@ msgctxt "OrchardCore.Facebook.Views.FacebookPluginPartSettings.Edit"
 msgid "The default template of the plugin, in Liquid format."
 msgstr "Liquid formatdaki plugin'in varsayılan template'i."
 
-#. @T["The website might be restarted upon saving the settings, potentially leading to temporary unresponsiveness during the process."]
+#. @T["The current tenant will be reloaded when the settings are saved."]
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:5
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
-msgid "The website might be restarted upon saving the settings, potentially leading to temporary unresponsiveness during the process."
-msgstr ""
+msgid "The current tenant will be reloaded when the settings are saved."
+msgstr "Ayarlar kaydedildiğinde mevcut kiracı (tenant) yeniden yüklenir."
 
 #. <a class="seedoc" href="@(OrchardCore.Admin.Constants.DocsUrl)reference/modules/Facebook/#core-components" target="_blank">@T["See documentation"]</a>
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:6
@@ -240,7 +240,7 @@ msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "Meta Integration"
 msgstr "Meta Entegrasyonu"
 
-#. <label asp-for="AppId" class="form-label">@T["Application Identifier"]</label>
+#. <label>@T["Application Identifier"]</label>
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:17
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "Application Identifier"
@@ -252,7 +252,7 @@ msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "The Application ID found on the Meta developer portal parameters."
 msgstr "Meta geliştirici portalı parametrelerinde bulunan Uygulama Kimliği ID."
 
-#. <label asp-for="AppSecret" class="form-label">@T["Secret Key"]</label>
+#. <label>@T["Secret Key"]</label>
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:24
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "Secret Key"
@@ -264,13 +264,13 @@ msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "The Application secret key found on the Meta developer portal parameters."
 msgstr "Meta geliştirici portalı parametrelerinde bulunan Uygulama gizli anahtarı."
 
-#. <label asp-for="Version" class="form-label">@T["Javascript SDK Version"]</label>
+#. <label>@T["Javascript SDK Version"]</label>
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:32
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "Javascript SDK Version"
 msgstr "Javascript SDK Versiyonu"
 
-#. <label asp-for="SdkJs" class="form-label">@T["Javascript Sdk js"]</label>
+#. <label>@T["Javascript Sdk js"]</label>
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:35
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "Javascript Sdk js"
@@ -294,7 +294,7 @@ msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "Init on every page"
 msgstr "bütün sayfalardaki ilklendirme (init)"
 
-#. <label asp-for="FBInitParams" class="form-label">@T["Parameters for the FB.init() call"]</label>
+#. <label>@T["Parameters for the FB.init() call"]</label>
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:59
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "Parameters for the FB.init() call"

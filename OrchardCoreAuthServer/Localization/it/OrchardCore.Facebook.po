@@ -10,67 +10,67 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Italian\n"
 "Language: it_IT\n"
-"PO-Revision-Date: 2024-11-12 17:05\n"
+"PO-Revision-Date: 2023-08-17 17:31\n"
 
 #. .Add(S["Configuration"], configuration => configuration
-#: OrchardCore.Facebook\AdminMenu.cs:25
+#: OrchardCore.Facebook\AdminMenu.cs:26
 msgctxt "OrchardCore.Facebook.AdminMenu"
 msgid "Configuration"
 msgstr "Configurazione"
 
 #. .Add(S["Settings"], settings => settings
-#: OrchardCore.Facebook\AdminMenu.cs:26
+#: OrchardCore.Facebook\AdminMenu.cs:27
 msgctxt "OrchardCore.Facebook.AdminMenu"
 msgid "Settings"
 msgstr "Impostazioni"
 
-#. .Add(S["Meta App"], S["Meta App"].PrefixPosition(), metaApp => metaApp
-#. .Add(S["Meta App"], S["Meta App"].PrefixPosition(), metaApp => metaApp
-#: OrchardCore.Facebook\AdminMenu.cs:27
-#: OrchardCore.Facebook\AdminMenu.cs:27
+#. .Add(S["Meta App"], S["Meta App"].PrefixPosition(), facebook => facebook
+#. .Add(S["Meta App"], S["Meta App"].PrefixPosition(), facebook => facebook
+#: OrchardCore.Facebook\AdminMenu.cs:28
+#: OrchardCore.Facebook\AdminMenu.cs:28
 msgctxt "OrchardCore.Facebook.AdminMenu"
 msgid "Meta App"
-msgstr "Meta App"
+msgstr ""
 
 #. .Add(S["Security"], security => security
-#: OrchardCore.Facebook\AdminMenuLogin.cs:25
+#: OrchardCore.Facebook\AdminMenu.cs:60
 msgctxt "OrchardCore.Facebook.AdminMenuLogin"
 msgid "Security"
 msgstr "Sicurezza"
 
 #. .Add(S["Authentication"], authentication => authentication
-#: OrchardCore.Facebook\AdminMenuLogin.cs:26
+#: OrchardCore.Facebook\AdminMenu.cs:61
 msgctxt "OrchardCore.Facebook.AdminMenuLogin"
 msgid "Authentication"
 msgstr "Autenticazione"
 
-#. .Add(S["Meta"], S["Meta"].PrefixPosition(), meta => meta
-#. .Add(S["Meta"], S["Meta"].PrefixPosition(), meta => meta
-#: OrchardCore.Facebook\AdminMenuLogin.cs:27
-#: OrchardCore.Facebook\AdminMenuLogin.cs:27
+#. .Add(S["Meta"], S["Meta"].PrefixPosition(), settings => settings
+#. .Add(S["Meta"], S["Meta"].PrefixPosition(), settings => settings
+#: OrchardCore.Facebook\AdminMenu.cs:62
+#: OrchardCore.Facebook\AdminMenu.cs:62
 msgctxt "OrchardCore.Facebook.AdminMenuLogin"
 msgid "Meta"
-msgstr "Meta"
+msgstr ""
 
 #. .Add(S["Configuration"], configuration => configuration
-#: OrchardCore.Facebook\AdminMenuPixel.cs:26
+#: OrchardCore.Facebook\AdminMenu.cs:94
 msgctxt "OrchardCore.Facebook.AdminMenuPixel"
 msgid "Configuration"
-msgstr "Configurazione"
+msgstr ""
 
 #. .Add(S["Settings"], settings => settings
-#: OrchardCore.Facebook\AdminMenuPixel.cs:27
+#: OrchardCore.Facebook\AdminMenu.cs:95
 msgctxt "OrchardCore.Facebook.AdminMenuPixel"
 msgid "Settings"
-msgstr "Impostazioni"
+msgstr ""
 
 #. .Add(S["Meta Pixel"], S["Meta Pixel"].PrefixPosition(), pixel => pixel
 #. .Add(S["Meta Pixel"], S["Meta Pixel"].PrefixPosition(), pixel => pixel
-#: OrchardCore.Facebook\AdminMenuPixel.cs:28
-#: OrchardCore.Facebook\AdminMenuPixel.cs:28
+#: OrchardCore.Facebook\AdminMenu.cs:96
+#: OrchardCore.Facebook\AdminMenu.cs:96
 msgctxt "OrchardCore.Facebook.AdminMenuPixel"
 msgid "Meta Pixel"
-msgstr "Meta Pixel"
+msgstr ""
 
 #. [RegularExpression(@"\/[-A-Za-z0-9+&@#\/%?=~_|!:,.;]+[-A-Za-z0-9+&@#\/%=~_|]", ErrorMessage = "Invalid path")]
 #: OrchardCore.Facebook\Login\ViewModels\FacebookLoginSettingsViewModel.cs:7
@@ -79,19 +79,19 @@ msgid "Invalid path"
 msgstr "Percorso non valido"
 
 #. results.Add(new ValidationResult(S["The AppId is required."], new[]
-#: OrchardCore.Facebook\Services\FacebookService.cs:43
+#: OrchardCore.Facebook\Services\FacebookService.cs:55
 msgctxt "OrchardCore.Facebook.Services.FacebookService"
 msgid "The AppId is required."
 msgstr "L'AppId è obbligatorio."
 
 #. results.Add(new ValidationResult(S["The App Secret is required."], new[]
-#: OrchardCore.Facebook\Services\FacebookService.cs:51
+#: OrchardCore.Facebook\Services\FacebookService.cs:63
 msgctxt "OrchardCore.Facebook.Services.FacebookService"
 msgid "The App Secret is required."
 msgstr "L'App Secret è obbligatorio."
 
-#. context.Updater.ModelState.AddModelError(nameof(model.Liquid), S["The FaceBook Body doesn't contain a valid Liquid expression. Details: {0}", string.Join(" ", errors)]);
-#: OrchardCore.Facebook\Widgets\Drivers\FacebookPluginPartDisplayDriver.cs:78
+#. updater.ModelState.AddModelError(nameof(model.Liquid), S["The FaceBook Body doesn't contain a valid Liquid expression. Details: {0}", string.Join(" ", errors)]);
+#: OrchardCore.Facebook\Widgets\Drivers\FacebookPluginPartDisplayDriver.cs:85
 msgctxt "OrchardCore.Facebook.Widgets.Drivers.FacebookPluginPartDisplayDriver"
 msgid "The FaceBook Body doesn't contain a valid Liquid expression. Details: {0}"
 msgstr "Il Facebook Body non contiene un'espressione Liquid valida. Dettagli: {0}"
@@ -132,11 +132,11 @@ msgctxt "OrchardCore.Facebook.Views.Items.FacebookLoginDeploymentStep.Thumbnail"
 msgid "Exports the Facebook Login settings."
 msgstr "Esporta le impostazioni di Login Facebook."
 
-#. @T["The website might be restarted upon saving the settings, potentially leading to temporary unresponsiveness during the process."]
+#. @T["The current tenant will be reloaded when the settings are saved."]
 #: OrchardCore.Facebook\Views\FacebookLoginSettings.Edit.cshtml:5
 msgctxt "OrchardCore.Facebook.Views.FacebookLoginSettings.Edit"
-msgid "The website might be restarted upon saving the settings, potentially leading to temporary unresponsiveness during the process."
-msgstr "Il sito web potrebbe essere riavviato al salvataggio delle impostazioni, portando a una potenziale assenza di risposta durante il processo."
+msgid "The current tenant will be reloaded when the settings are saved."
+msgstr "Il tenant verrà riavviato quando le impostazioni saranno salvate."
 
 #. <a class="seedoc" href="@(OrchardCore.Admin.Constants.DocsUrl)reference/modules/Facebook/#facebook-login" target="_blank">@T["See documentation"]</a>
 #: OrchardCore.Facebook\Views\FacebookLoginSettings.Edit.cshtml:6
@@ -150,7 +150,7 @@ msgctxt "OrchardCore.Facebook.Views.FacebookLoginSettings.Edit"
 msgid "Login Settings"
 msgstr "Impostazioni di accesso"
 
-#. <label asp-for="CallbackPath" class="form-label">@T["CallbackPath"]</label>
+#. <label>@T["CallbackPath"]</label>
 #: OrchardCore.Facebook\Views\FacebookLoginSettings.Edit.cshtml:12
 msgctxt "OrchardCore.Facebook.Views.FacebookLoginSettings.Edit"
 msgid "CallbackPath"
@@ -162,7 +162,7 @@ msgctxt "OrchardCore.Facebook.Views.FacebookLoginSettings.Edit"
 msgid "The request path within the application's base path where the user-agent will be returned. The middleware will process this request when it arrives."
 msgstr "L'indirizzo rispetto al percorso base dell'applicazione dove verrà rediretto lo user-agent. Il middleware elaborerà questa richiesta quando arriverà."
 
-#. <label class="form-check-label" class="form-label" asp-for="SaveTokens">@T["Store tokens"]</label>
+#. <label class="form-check-label" asp-for="SaveTokens">@T["Store tokens"]</label>
 #: OrchardCore.Facebook\Views\FacebookLoginSettings.Edit.cshtml:21
 msgctxt "OrchardCore.Facebook.Views.FacebookLoginSettings.Edit"
 msgid "Store tokens"
@@ -174,25 +174,25 @@ msgctxt "OrchardCore.Facebook.Views.FacebookLoginSettings.Edit"
 msgid "Store external authentication tokens for reuse"
 msgstr "Memorizza i token di autenticazione esterni per il suo riutilizzo"
 
-#. <span class="hint">@T["<a href=\"{0}\">Meta Integration settings</a> must be configured in order to use the Login Feature", @Url.RouteUrl(new { area = "OrchardCore.Settings", controller = "Admin", groupId = OrchardCore.Facebook.FacebookConstants.Features.Core })]</span>
+#. <span class="hint">@T["<a href=\"{0}\">Meta Integration settings</a> must be configured in order to use the Login Feature",@Url.RouteUrl(new { area = "OrchardCore.Settings", controller = "Admin", groupId = OrchardCore.Facebook.FacebookConstants.Features.Core })]</span>
 #: OrchardCore.Facebook\Views\FacebookLoginSettings.Edit.cshtml:27
 msgctxt "OrchardCore.Facebook.Views.FacebookLoginSettings.Edit"
 msgid "<a href=\"{0}\">Meta Integration settings</a> must be configured in order to use the Login Feature"
-msgstr "<a href=\"{0}\">Le impostazioni di integrazione con Meta</a> devono essere configurate per poter utilizzare la funzione di accesso."
+msgstr ""
 
-#. <label asp-for="PixelId" class="form-label">@T["Pixel Identifier"]</label>
+#. <label>@T["Pixel Identifier"]</label>
 #: OrchardCore.Facebook\Views\FacebookPixelSettings.Edit.cshtml:6
 msgctxt "OrchardCore.Facebook.Views.FacebookPixelSettings.Edit"
 msgid "Pixel Identifier"
-msgstr "Identificatore Pixel"
+msgstr ""
 
 #. <span class="hint">@T["The Pixel ID found on the Meta Data Sources portal."]</span>
 #: OrchardCore.Facebook\Views\FacebookPixelSettings.Edit.cshtml:9
 msgctxt "OrchardCore.Facebook.Views.FacebookPixelSettings.Edit"
 msgid "The Pixel ID found on the Meta Data Sources portal."
-msgstr "L'ID Pixel trovato sul portale Meta Data Sources ."
+msgstr ""
 
-#. <label asp-for="Liquid" class="@Orchard.GetLabelClasses()">@T["Body"]</label>
+#. <label asp-for="Liquid" class="@Orchard.GetLabelCssClasses()">@T["Body"]</label>
 #: OrchardCore.Facebook\Views\FacebookPluginPart.Edit.cshtml:13
 msgctxt "OrchardCore.Facebook.Views.FacebookPluginPart.Edit"
 msgid "Body"
@@ -204,7 +204,7 @@ msgctxt "OrchardCore.Facebook.Views.FacebookPluginPart.Edit"
 msgid "The template of the plugin, in Liquid format."
 msgstr "Il template del plugin, con sintassi Liquid."
 
-#. <label asp-for="Liquid" class="form-label">@T["Body"]</label>
+#. <label asp-for="Liquid">@T["Body"]</label>
 #: OrchardCore.Facebook\Views\FacebookPluginPartSettings.Edit.cshtml:13
 msgctxt "OrchardCore.Facebook.Views.FacebookPluginPartSettings.Edit"
 msgid "Body"
@@ -216,11 +216,11 @@ msgctxt "OrchardCore.Facebook.Views.FacebookPluginPartSettings.Edit"
 msgid "The default template of the plugin, in Liquid format."
 msgstr "Il template predefinito del plugin, con sintassi Liquid."
 
-#. @T["The website might be restarted upon saving the settings, potentially leading to temporary unresponsiveness during the process."]
+#. @T["The current tenant will be reloaded when the settings are saved."]
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:5
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
-msgid "The website might be restarted upon saving the settings, potentially leading to temporary unresponsiveness during the process."
-msgstr "Il sito web potrebbe essere riavviato al salvataggio delle impostazioni, portando a una potenziale assenza di risposta durante il processo."
+msgid "The current tenant will be reloaded when the settings are saved."
+msgstr "Il tenant verrà riavviato quando le impostazioni saranno salvate."
 
 #. <a class="seedoc" href="@(OrchardCore.Admin.Constants.DocsUrl)reference/modules/Facebook/#core-components" target="_blank">@T["See documentation"]</a>
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:6
@@ -238,9 +238,9 @@ msgstr "Si è verificato un errore durante la decifratura di un'impostazione. Si
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:14
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "Meta Integration"
-msgstr "Integrazione Meta"
+msgstr ""
 
-#. <label asp-for="AppId" class="form-label">@T["Application Identifier"]</label>
+#. <label>@T["Application Identifier"]</label>
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:17
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "Application Identifier"
@@ -250,9 +250,9 @@ msgstr "Identificatore dell'applicazione"
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:20
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "The Application ID found on the Meta developer portal parameters."
-msgstr "L'ID Applicazione presente nel portale dello sviluppatore di Meta."
+msgstr ""
 
-#. <label asp-for="AppSecret" class="form-label">@T["Secret Key"]</label>
+#. <label>@T["Secret Key"]</label>
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:24
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "Secret Key"
@@ -262,15 +262,15 @@ msgstr "Chiave segreta"
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:27
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "The Application secret key found on the Meta developer portal parameters."
-msgstr "La chiave segreta dell'applicazione presente nei parametri del portale dello sviluppatore di Meta."
+msgstr ""
 
-#. <label asp-for="Version" class="form-label">@T["Javascript SDK Version"]</label>
+#. <label>@T["Javascript SDK Version"]</label>
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:32
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "Javascript SDK Version"
 msgstr "Versione Javascript SDK"
 
-#. <label asp-for="SdkJs" class="form-label">@T["Javascript Sdk js"]</label>
+#. <label>@T["Javascript Sdk js"]</label>
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:35
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "Javascript Sdk js"
@@ -294,7 +294,7 @@ msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "Init on every page"
 msgstr "Avvia su ogni pagina"
 
-#. <label asp-for="FBInitParams" class="form-label">@T["Parameters for the FB.init() call"]</label>
+#. <label>@T["Parameters for the FB.init() call"]</label>
 #: OrchardCore.Facebook\Views\FacebookSettings.Edit.cshtml:59
 msgctxt "OrchardCore.Facebook.Views.FacebookSettings.Edit"
 msgid "Parameters for the FB.init() call"
@@ -310,17 +310,17 @@ msgstr "AppId e la versione sono compilate automaticamente. Controlla il documen
 #: OrchardCore.Facebook\Views\NavigationItemText-facebook.Id.cshtml:1
 msgctxt "OrchardCore.Facebook.Views.NavigationItemText-facebook.Id"
 msgid "Meta"
-msgstr "Meta"
+msgstr ""
 
 #. <span class="icon"><i class="fa-brands fa-meta" aria-hidden="true"></i></span><span class="title">@T["Meta App"]</span>
 #: OrchardCore.Facebook\Views\NavigationItemText-facebookApp.Id.cshtml:1
 msgctxt "OrchardCore.Facebook.Views.NavigationItemText-facebookApp.Id"
 msgid "Meta App"
-msgstr "Meta App"
+msgstr ""
 
 #. <span class="icon"><i class="fa-brands fa-meta" aria-hidden="true"></i></span><span class="title">@T["Meta Pixel"]</span>
 #: OrchardCore.Facebook\Views\NavigationItemText-facebookPixel.Id.cshtml:1
 msgctxt "OrchardCore.Facebook.Views.NavigationItemText-facebookPixel.Id"
 msgid "Meta Pixel"
-msgstr "Meta Pixel"
+msgstr ""
 

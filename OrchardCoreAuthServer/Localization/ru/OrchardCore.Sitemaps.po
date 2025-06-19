@@ -10,198 +10,198 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Russian\n"
 "Language: ru_RU\n"
-"PO-Revision-Date: 2024-09-09 16:47\n"
+"PO-Revision-Date: 2023-08-17 17:33\n"
 
-#. .Add(S["Configuration"], configuration => configuration
-#: OrchardCore.Sitemaps\AdminMenu.cs:18
+#. builder.Add(S["Configuration"], configuration => configuration
+#: OrchardCore.Sitemaps\AdminMenu.cs:24
 msgctxt "OrchardCore.Sitemaps.AdminMenu"
 msgid "Configuration"
 msgstr "Настройки"
 
 #. .Add(S["SEO"], S["SEO"].PrefixPosition(), seo => seo
 #. .Add(S["SEO"], S["SEO"].PrefixPosition(), seo => seo
-#: OrchardCore.Sitemaps\AdminMenu.cs:19
-#: OrchardCore.Sitemaps\AdminMenu.cs:19
+#: OrchardCore.Sitemaps\AdminMenu.cs:25
+#: OrchardCore.Sitemaps\AdminMenu.cs:25
 msgctxt "OrchardCore.Sitemaps.AdminMenu"
 msgid "SEO"
 msgstr "Поисковая оптимизация (SEO)"
 
 #. .Add(S["Sitemaps"], S["Sitemaps"].PrefixPosition("1"), sitemaps => sitemaps
 #. .Add(S["Sitemaps"], S["Sitemaps"].PrefixPosition("1"), sitemaps => sitemaps
-#: OrchardCore.Sitemaps\AdminMenu.cs:21
-#: OrchardCore.Sitemaps\AdminMenu.cs:21
+#: OrchardCore.Sitemaps\AdminMenu.cs:27
+#: OrchardCore.Sitemaps\AdminMenu.cs:27
 msgctxt "OrchardCore.Sitemaps.AdminMenu"
 msgid "Sitemaps"
 msgstr "Карты сайта"
 
-#. .Add(S["Sitemap Indexes"], S["Sitemap Indexes"].PrefixPosition("2"), indexes => indexes
-#. .Add(S["Sitemap Indexes"], S["Sitemap Indexes"].PrefixPosition("2"), indexes => indexes
-#: OrchardCore.Sitemaps\AdminMenu.cs:25
-#: OrchardCore.Sitemaps\AdminMenu.cs:25
+#. .Add(S["Sitemap Indexes"], S["Sitemap Indexes"].PrefixPosition("2"), sitemaps => sitemaps
+#. .Add(S["Sitemap Indexes"], S["Sitemap Indexes"].PrefixPosition("2"), sitemaps => sitemaps
+#: OrchardCore.Sitemaps\AdminMenu.cs:31
+#: OrchardCore.Sitemaps\AdminMenu.cs:31
 msgctxt "OrchardCore.Sitemaps.AdminMenu"
 msgid "Sitemap Indexes"
 msgstr "Индексы карт сайта"
 
-#. .Add(S["Sitemaps Cache"], S["Sitemaps Cache"].PrefixPosition("3"), cache => cache
-#. .Add(S["Sitemaps Cache"], S["Sitemaps Cache"].PrefixPosition("3"), cache => cache
-#: OrchardCore.Sitemaps\AdminMenu.cs:29
-#: OrchardCore.Sitemaps\AdminMenu.cs:29
+#. .Add(S["Sitemaps Cache"], S["Sitemaps Cache"].PrefixPosition("3"), sitemaps => sitemaps
+#. .Add(S["Sitemaps Cache"], S["Sitemaps Cache"].PrefixPosition("3"), sitemaps => sitemaps
+#: OrchardCore.Sitemaps\AdminMenu.cs:35
+#: OrchardCore.Sitemaps\AdminMenu.cs:35
 msgctxt "OrchardCore.Sitemaps.AdminMenu"
 msgid "Sitemaps Cache"
 msgstr "Кэш карт сайта"
 
-#. new SelectListItem(S["Delete"], nameof(ContentsBulkAction.Remove)),
-#: OrchardCore.Sitemaps\Controllers\AdminController.cs:108
+#. new SelectListItem() { Text = S["Delete"], Value = nameof(ContentsBulkAction.Remove) }
+#: OrchardCore.Sitemaps\Controllers\AdminController.cs:106
 msgctxt "OrchardCore.Sitemaps.Controllers.AdminController"
 msgid "Delete"
 msgstr "Удалить"
 
 #. await _notifier.SuccessAsync(H["Sitemap updated successfully."]);
-#: OrchardCore.Sitemaps\Controllers\AdminController.cs:274
+#: OrchardCore.Sitemaps\Controllers\AdminController.cs:272
 msgctxt "OrchardCore.Sitemaps.Controllers.AdminController"
 msgid "Sitemap updated successfully."
 msgstr "Карта сайта успешно обновлена."
 
 #. await _notifier.SuccessAsync(H["Sitemap deleted successfully."]);
-#: OrchardCore.Sitemaps\Controllers\AdminController.cs:300
+#: OrchardCore.Sitemaps\Controllers\AdminController.cs:298
 msgctxt "OrchardCore.Sitemaps.Controllers.AdminController"
 msgid "Sitemap deleted successfully."
 msgstr "Карта сайта успешно удалена."
 
 #. await _notifier.SuccessAsync(H["Sitemap toggled successfully."]);
-#: OrchardCore.Sitemaps\Controllers\AdminController.cs:324
+#: OrchardCore.Sitemaps\Controllers\AdminController.cs:322
 msgctxt "OrchardCore.Sitemaps.Controllers.AdminController"
 msgid "Sitemap toggled successfully."
 msgstr "Карта сайта успешно переключена."
 
 #. await _notifier.SuccessAsync(H["Sitemaps successfully removed."]);
-#: OrchardCore.Sitemaps\Controllers\AdminController.cs:351
+#: OrchardCore.Sitemaps\Controllers\AdminController.cs:349
 msgctxt "OrchardCore.Sitemaps.Controllers.AdminController"
 msgid "Sitemaps successfully removed."
 msgstr "Карты сайта успешно удалены."
 
 #. await _notifier.ErrorAsync(H["Sitemap cache purged, with errors."]);
-#: OrchardCore.Sitemaps\Controllers\SitemapCacheController.cs:59
+#: OrchardCore.Sitemaps\Controllers\SitemapCacheController.cs:60
 msgctxt "OrchardCore.Sitemaps.Controllers.SitemapCacheController"
 msgid "Sitemap cache purged, with errors."
 msgstr "Кэш карты сайта очищен с ошибками."
 
 #. await _notifier.InformationAsync(H["Sitemap cache purged."]);
-#: OrchardCore.Sitemaps\Controllers\SitemapCacheController.cs:63
+#: OrchardCore.Sitemaps\Controllers\SitemapCacheController.cs:64
 msgctxt "OrchardCore.Sitemaps.Controllers.SitemapCacheController"
 msgid "Sitemap cache purged."
 msgstr "Кэш карты сайта очищен."
 
 #. await _notifier.ErrorAsync(H["Error purging sitemap cache item."]);
-#: OrchardCore.Sitemaps\Controllers\SitemapCacheController.cs:80
+#: OrchardCore.Sitemaps\Controllers\SitemapCacheController.cs:81
 msgctxt "OrchardCore.Sitemaps.Controllers.SitemapCacheController"
 msgid "Error purging sitemap cache item."
 msgstr "Ошибка очистки элемента кэша карты сайта."
 
 #. await _notifier.InformationAsync(H["Sitemap cache item purged."]);
-#: OrchardCore.Sitemaps\Controllers\SitemapCacheController.cs:84
+#: OrchardCore.Sitemaps\Controllers\SitemapCacheController.cs:85
 msgctxt "OrchardCore.Sitemaps.Controllers.SitemapCacheController"
 msgid "Sitemap cache item purged."
 msgstr "Элемент кэша карты сайта очищен."
 
-#. new SelectListItem(S["Delete"], nameof(ContentsBulkAction.Remove)),
-#: OrchardCore.Sitemaps\Controllers\SitemapIndexController.cs:104
+#. new SelectListItem() { Text = S["Delete"], Value = nameof(ContentsBulkAction.Remove) }
+#: OrchardCore.Sitemaps\Controllers\SitemapIndexController.cs:100
 msgctxt "OrchardCore.Sitemaps.Controllers.SitemapIndexController"
 msgid "Delete"
 msgstr "Удалить"
 
 #. await _notifier.SuccessAsync(H["Sitemap index created successfully"]);
-#: OrchardCore.Sitemaps\Controllers\SitemapIndexController.cs:187
+#: OrchardCore.Sitemaps\Controllers\SitemapIndexController.cs:183
 msgctxt "OrchardCore.Sitemaps.Controllers.SitemapIndexController"
 msgid "Sitemap index created successfully"
 msgstr "Индекс карты сайта успешно создан"
 
 #. await _notifier.SuccessAsync(H["Sitemap index updated successfully"]);
-#: OrchardCore.Sitemaps\Controllers\SitemapIndexController.cs:276
+#: OrchardCore.Sitemaps\Controllers\SitemapIndexController.cs:272
 msgctxt "OrchardCore.Sitemaps.Controllers.SitemapIndexController"
 msgid "Sitemap index updated successfully"
 msgstr "Индекс карты сайта успешно обновлён"
 
 #. await _notifier.SuccessAsync(H["Sitemap index deleted successfully."]);
-#: OrchardCore.Sitemaps\Controllers\SitemapIndexController.cs:302
+#: OrchardCore.Sitemaps\Controllers\SitemapIndexController.cs:298
 msgctxt "OrchardCore.Sitemaps.Controllers.SitemapIndexController"
 msgid "Sitemap index deleted successfully."
 msgstr "Индекс карты сайта успешно удалён."
 
 #. await _notifier.SuccessAsync(H["Sitemap index menu toggled successfully."]);
-#: OrchardCore.Sitemaps\Controllers\SitemapIndexController.cs:326
+#: OrchardCore.Sitemaps\Controllers\SitemapIndexController.cs:322
 msgctxt "OrchardCore.Sitemaps.Controllers.SitemapIndexController"
 msgid "Sitemap index menu toggled successfully."
 msgstr "Меню индекса карты сайта успешно переключено."
 
 #. await _notifier.SuccessAsync(H["Sitemap indices successfully removed."]);
-#: OrchardCore.Sitemaps\Controllers\SitemapIndexController.cs:353
+#: OrchardCore.Sitemaps\Controllers\SitemapIndexController.cs:349
 msgctxt "OrchardCore.Sitemaps.Controllers.SitemapIndexController"
 msgid "Sitemap indices successfully removed."
 msgstr "Индексы карты сайта успешно удалены."
 
 #. await _notifier.SuccessAsync(H["Sitemap source added successfully."]);
-#: OrchardCore.Sitemaps\Controllers\SourceController.cs:116
+#: OrchardCore.Sitemaps\Controllers\SourceController.cs:121
 msgctxt "OrchardCore.Sitemaps.Controllers.SourceController"
 msgid "Sitemap source added successfully."
 msgstr "Источник карты сайта успешно добавлен."
 
 #. await _notifier.SuccessAsync(H["Sitemap source updated successfully."]);
-#: OrchardCore.Sitemaps\Controllers\SourceController.cs:189
+#: OrchardCore.Sitemaps\Controllers\SourceController.cs:193
 msgctxt "OrchardCore.Sitemaps.Controllers.SourceController"
 msgid "Sitemap source updated successfully."
 msgstr "Источник карты сайта успешно обновлен."
 
 #. await _notifier.ErrorAsync(H["The sitemap source has validation errors."]);
-#: OrchardCore.Sitemaps\Controllers\SourceController.cs:193
+#: OrchardCore.Sitemaps\Controllers\SourceController.cs:197
 msgctxt "OrchardCore.Sitemaps.Controllers.SourceController"
 msgid "The sitemap source has validation errors."
 msgstr "Проверка источника карты сайта выявила ошибки."
 
 #. await _notifier.SuccessAsync(H["Sitemap source deleted successfully."]);
-#: OrchardCore.Sitemaps\Controllers\SourceController.cs:227
+#: OrchardCore.Sitemaps\Controllers\SourceController.cs:230
 msgctxt "OrchardCore.Sitemaps.Controllers.SourceController"
 msgid "Sitemap source deleted successfully."
 msgstr "Источник карты сайта успешно удалён."
 
 #. context.Updater.ModelState.AddModelError(Prefix, sitemap.Path, S["Please do not use any of the following characters in your permalink: {0}. No spaces, or consecutive slashes, are allowed (please use dashes or underscores instead).", invalidCharactersForMessage]);
-#: OrchardCore.Sitemaps\Drivers\CustomPathSitemapSourceDriver.cs:57
+#: OrchardCore.Sitemaps\Drivers\CustomPathSitemapSourceDriver.cs:61
 msgctxt "OrchardCore.Sitemaps.Drivers.CustomPathSitemapSourceDriver"
 msgid "Please do not use any of the following characters in your permalink: {0}. No spaces, or consecutive slashes, are allowed (please use dashes or underscores instead)."
 msgstr ""
 
 #. context.Updater.ModelState.AddModelError(Prefix, sitemap.Path, S["Your path is too long. The path can only be up to {0} characters.", CustomPathSitemapSource.MaxPathLength]);
-#: OrchardCore.Sitemaps\Drivers\CustomPathSitemapSourceDriver.cs:62
+#: OrchardCore.Sitemaps\Drivers\CustomPathSitemapSourceDriver.cs:66
 msgctxt "OrchardCore.Sitemaps.Drivers.CustomPathSitemapSourceDriver"
 msgid "Your path is too long. The path can only be up to {0} characters."
 msgstr ""
 
 #. updater.ModelState.AddModelError(Prefix, Path, S["Your permalink can't be set to the homepage"]);
-#: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:37
+#: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:40
 msgctxt "OrchardCore.Sitemaps.Services.SitemapHelperService"
 msgid "Your permalink can't be set to the homepage"
 msgstr "Ваша постоянная ссылка не может быть установлена на домашнюю страницу"
 
 #. updater.ModelState.AddModelError(Prefix, Path, S["Please do not use any of the following characters in your permalink: {0}. No spaces are allowed (please use dashes or underscores instead).", invalidCharactersForMessage]);
-#: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:43
+#: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:46
 msgctxt "OrchardCore.Sitemaps.Services.SitemapHelperService"
 msgid "Please do not use any of the following characters in your permalink: {0}. No spaces are allowed (please use dashes or underscores instead)."
 msgstr "Пожалуйста, не используйте следующие символы в вашей постоянной ссылке: {0}. Не допускаются пробелы (используйте дефис или подчеркивание)."
 
 #. updater.ModelState.AddModelError(Prefix, Path, S["Your permalink must end with {0}.", Sitemap.PathExtension]);
-#: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:49
+#: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:52
 msgctxt "OrchardCore.Sitemaps.Services.SitemapHelperService"
 msgid "Your permalink must end with {0}."
 msgstr "Ваша постоянная ссылка должна заканчиваться на {0}."
 
 #. updater.ModelState.AddModelError(Prefix, Path, S["Your permalink is too long. The permalink can only be up to {0} characters.", MaxPathLength]);
-#: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:54
+#: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:57
 msgctxt "OrchardCore.Sitemaps.Services.SitemapHelperService"
 msgid "Your permalink is too long. The permalink can only be up to {0} characters."
 msgstr "Слишком длинная постоянная ссылка. Ссылка может быть до {0} символов."
 
 #. updater.ModelState.AddModelError(Prefix, Path, S["Your permalink is already in use."]);
-#: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:71
+#: OrchardCore.Sitemaps\Services\SitemapHelperService.cs:74
 msgctxt "OrchardCore.Sitemaps.Services.SitemapHelperService"
 msgid "Your permalink is already in use."
 msgstr "Ваша постоянная ссылка уже используется."
@@ -248,13 +248,13 @@ msgctxt "OrchardCore.Sitemaps.Views.Admin.Create"
 msgid "The site settings 'Base url' property is empty, but is required to generate sitemaps."
 msgstr "Свойство сайта 'Базовый адрес' не заполнено, оно является обязательным для создания карт сайта."
 
-#. <label asp-for="Name" class="form-label">@T["Name"]</label>
+#. <label asp-for="Name">@T["Name"]</label>
 #: OrchardCore.Sitemaps\Views\Admin\Create.cshtml:13
 msgctxt "OrchardCore.Sitemaps.Views.Admin.Create"
 msgid "Name"
 msgstr "Имя"
 
-#. <label asp-for="Path" class="form-label">@T["Permalink"]</label>
+#. <label asp-for="Path">@T["Permalink"]</label>
 #: OrchardCore.Sitemaps\Views\Admin\Create.cshtml:19
 msgctxt "OrchardCore.Sitemaps.Views.Admin.Create"
 msgid "Permalink"
@@ -302,13 +302,13 @@ msgctxt "OrchardCore.Sitemaps.Views.SitemapIndex.Create"
 msgid "The site settings 'Base url' property is empty, but is required to generate sitemaps."
 msgstr "Свойство сайта 'Базовый адрес' не заполнено, оно является обязательным для создания карт сайта."
 
-#. <label asp-for="Name" class="form-label">@T["Name"]</label>
+#. <label asp-for="Name">@T["Name"]</label>
 #: OrchardCore.Sitemaps\Views\SitemapIndex\Create.cshtml:14
 msgctxt "OrchardCore.Sitemaps.Views.SitemapIndex.Create"
 msgid "Name"
 msgstr "Имя"
 
-#. <label asp-for="Path" class="form-label">@T["Permalink"]</label>
+#. <label asp-for="Path">@T["Permalink"]</label>
 #: OrchardCore.Sitemaps\Views\SitemapIndex\Create.cshtml:20
 msgctxt "OrchardCore.Sitemaps.Views.SitemapIndex.Create"
 msgid "Permalink"
@@ -332,7 +332,7 @@ msgctxt "OrchardCore.Sitemaps.Views.SitemapIndex.Create"
 msgid "Uncheck to disable routing to the sitemap index."
 msgstr "Снимите флажок, чтобы отключить маршрутизацию к индексу карты сайта."
 
-#. <label asp-for="ContainableSitemaps" class="form-label">@T["Contained Sitemaps"]</label>
+#. <label asp-for="ContainableSitemaps">@T["Contained Sitemaps"]</label>
 #: OrchardCore.Sitemaps\Views\SitemapIndex\Create.cshtml:39
 msgctxt "OrchardCore.Sitemaps.Views.SitemapIndex.Create"
 msgid "Contained Sitemaps"
@@ -380,7 +380,7 @@ msgctxt "OrchardCore.Sitemaps.Views.CustomPathSitemapSource.Edit"
 msgid "Sitemap Custom Path"
 msgstr ""
 
-#. <label asp-for="Path" class="form-label">@T["Path"] </label>
+#. <label asp-for="Path">@T["Path"] </label>
 #: OrchardCore.Sitemaps\Views\CustomPathSitemapSource.Edit.cshtml:10
 msgctxt "OrchardCore.Sitemaps.Views.CustomPathSitemapSource.Edit"
 msgid "Path"
@@ -392,7 +392,7 @@ msgctxt "OrchardCore.Sitemaps.Views.CustomPathSitemapSource.Edit"
 msgid "The path to add to the sitemap. e.g. path/to/something"
 msgstr ""
 
-#. <label asp-for="ChangeFrequency" class="form-label">@T["Change Frequency"] </label>
+#. <label asp-for="ChangeFrequency">@T["Change Frequency"] </label>
 #: OrchardCore.Sitemaps\Views\CustomPathSitemapSource.Edit.cshtml:22
 msgctxt "OrchardCore.Sitemaps.Views.CustomPathSitemapSource.Edit"
 msgid "Change Frequency"
@@ -404,7 +404,7 @@ msgctxt "OrchardCore.Sitemaps.Views.CustomPathSitemapSource.Edit"
 msgid "The default frequency with which this path is likely to change."
 msgstr ""
 
-#. <label asp-for="Priority" class="form-label">@T["Priority"] </label>
+#. <label asp-for="Priority">@T["Priority"] </label>
 #: OrchardCore.Sitemaps\Views\CustomPathSitemapSource.Edit.cshtml:27
 msgctxt "OrchardCore.Sitemaps.Views.CustomPathSitemapSource.Edit"
 msgid "Priority"
@@ -560,13 +560,13 @@ msgctxt "OrchardCore.Sitemaps.Views.Admin.Edit"
 msgid "The site settings 'Base url' property is empty, but is required to generate sitemaps."
 msgstr "Свойство сайта 'Базовый адрес' не заполнено, оно является обязательным для создания карт сайта."
 
-#. <label asp-for="Name" class="form-label">@T["Name"]</label>
+#. <label asp-for="Name">@T["Name"]</label>
 #: OrchardCore.Sitemaps\Views\Admin\Edit.cshtml:14
 msgctxt "OrchardCore.Sitemaps.Views.Admin.Edit"
 msgid "Name"
 msgstr "Имя"
 
-#. <label asp-for="Path" class="form-label">@T["Permalink"]</label>
+#. <label asp-for="Path">@T["Permalink"]</label>
 #: OrchardCore.Sitemaps\Views\Admin\Edit.cshtml:20
 msgctxt "OrchardCore.Sitemaps.Views.Admin.Edit"
 msgid "Permalink"
@@ -614,13 +614,13 @@ msgctxt "OrchardCore.Sitemaps.Views.SitemapIndex.Edit"
 msgid "The site settings 'Base url' property is empty, but is required to generate sitemaps."
 msgstr "Свойство сайта 'Базовый адрес' не заполнено, оно является обязательным для создания карт сайта."
 
-#. <label asp-for="Name" class="form-label">@T["Name"]</label>
+#. <label asp-for="Name">@T["Name"]</label>
 #: OrchardCore.Sitemaps\Views\SitemapIndex\Edit.cshtml:15
 msgctxt "OrchardCore.Sitemaps.Views.SitemapIndex.Edit"
 msgid "Name"
 msgstr "Имя"
 
-#. <label asp-for="Path" class="form-label">@T["Permalink"]</label>
+#. <label asp-for="Path">@T["Permalink"]</label>
 #: OrchardCore.Sitemaps\Views\SitemapIndex\Edit.cshtml:21
 msgctxt "OrchardCore.Sitemaps.Views.SitemapIndex.Edit"
 msgid "Permalink"
@@ -644,7 +644,7 @@ msgctxt "OrchardCore.Sitemaps.Views.SitemapIndex.Edit"
 msgid "Uncheck to disable routing to the sitemap index."
 msgstr "Снимите флажок, чтобы отключить маршрутизацию к индексу карты сайта."
 
-#. <label asp-for="ContainableSitemaps" class="form-label">@T["Contained Sitemaps"]</label>
+#. <label asp-for="ContainableSitemaps">@T["Contained Sitemaps"]</label>
 #: OrchardCore.Sitemaps\Views\SitemapIndex\Edit.cshtml:40
 msgctxt "OrchardCore.Sitemaps.Views.SitemapIndex.Edit"
 msgid "Contained Sitemaps"
@@ -1028,7 +1028,7 @@ msgctxt "OrchardCore.Sitemaps.Views.SitemapPart.Edit"
 msgid "Check to exclude this content item from the site map."
 msgstr "Отметьте, чтобы исключить этот элемент из карты сайта."
 
-#. <label asp-for="ChangeFrequency" class="@Orchard.GetLabelClasses()">@T["Change Frequency"]</label>
+#. <label asp-for="ChangeFrequency" class="@Orchard.GetLabelCssClasses()">@T["Change Frequency"]</label>
 #: OrchardCore.Sitemaps\Views\SitemapPart.Edit.cshtml:20
 msgctxt "OrchardCore.Sitemaps.Views.SitemapPart.Edit"
 msgid "Change Frequency"
@@ -1040,7 +1040,7 @@ msgctxt "OrchardCore.Sitemaps.Views.SitemapPart.Edit"
 msgid "The frequency this content item is likely to change."
 msgstr "Частота изменения элемента содержимого."
 
-#. <label asp-for="Priority" class="@Orchard.GetLabelClasses()">@T["Priority"] </label>
+#. <label asp-for="Priority" class="@Orchard.GetLabelCssClasses()">@T["Priority"] </label>
 #: OrchardCore.Sitemaps\Views\SitemapPart.Edit.cshtml:27
 msgctxt "OrchardCore.Sitemaps.Views.SitemapPart.Edit"
 msgid "Priority"

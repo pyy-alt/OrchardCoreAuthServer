@@ -10,184 +10,160 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Finnish\n"
 "Language: fi_FI\n"
-"PO-Revision-Date: 2024-11-10 14:38\n"
+"PO-Revision-Date: 2023-08-17 17:28\n"
 
 #. .Add(S["Configuration"], configuration => configuration
-#: OrchardCore.Deployment\AdminMenu.cs:18
+#: OrchardCore.Deployment\AdminMenu.cs:25
 msgctxt "OrchardCore.Deployment.AdminMenu"
 msgid "Configuration"
 msgstr "Konfigurointi"
 
 #. .Add(S["Import/Export"], S["Import/Export"].PrefixPosition(), import => import
 #. .Add(S["Import/Export"], S["Import/Export"].PrefixPosition(), import => import
-#: OrchardCore.Deployment\AdminMenu.cs:19
-#: OrchardCore.Deployment\AdminMenu.cs:19
+#: OrchardCore.Deployment\AdminMenu.cs:26
+#: OrchardCore.Deployment\AdminMenu.cs:26
 msgctxt "OrchardCore.Deployment.AdminMenu"
 msgid "Import/Export"
 msgstr "Tuo/Vie"
 
 #. .Add(S["Deployment Plans"], S["Deployment Plans"].PrefixPosition(), deployment => deployment
 #. .Add(S["Deployment Plans"], S["Deployment Plans"].PrefixPosition(), deployment => deployment
-#: OrchardCore.Deployment\AdminMenu.cs:20
-#: OrchardCore.Deployment\AdminMenu.cs:20
+#: OrchardCore.Deployment\AdminMenu.cs:27
+#: OrchardCore.Deployment\AdminMenu.cs:27
 msgctxt "OrchardCore.Deployment.AdminMenu"
 msgid "Deployment Plans"
 msgstr "Käyttöönottosuunnitelmat"
 
 #. .Add(S["Package Import"], S["Package Import"].PrefixPosition(), deployment => deployment
 #. .Add(S["Package Import"], S["Package Import"].PrefixPosition(), deployment => deployment
-#: OrchardCore.Deployment\AdminMenu.cs:25
-#: OrchardCore.Deployment\AdminMenu.cs:25
+#: OrchardCore.Deployment\AdminMenu.cs:32
+#: OrchardCore.Deployment\AdminMenu.cs:32
 msgctxt "OrchardCore.Deployment.AdminMenu"
 msgid "Package Import"
 msgstr "Paketin tuonti"
 
 #. .Add(S["JSON Import"], S["JSON Import"].PrefixPosition(), deployment => deployment
 #. .Add(S["JSON Import"], S["JSON Import"].PrefixPosition(), deployment => deployment
-#: OrchardCore.Deployment\AdminMenu.cs:30
-#: OrchardCore.Deployment\AdminMenu.cs:30
+#: OrchardCore.Deployment\AdminMenu.cs:37
+#: OrchardCore.Deployment\AdminMenu.cs:37
 msgctxt "OrchardCore.Deployment.AdminMenu"
 msgid "JSON Import"
 msgstr "JSON-tuonti"
 
-#. new SelectListItem(S["Delete"], nameof(ContentsBulkAction.Delete)),
-#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:110
+#. new SelectListItem() { Text = S["Delete"], Value = nameof(ContentsBulkAction.Delete) }
+#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:106
 msgctxt "OrchardCore.Deployment.Controllers.DeploymentPlanController"
 msgid "Delete"
 msgstr "Poista"
 
 #. await _notifier.SuccessAsync(H["Deployment plans successfully deleted."]);
-#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:145
+#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:142
 msgctxt "OrchardCore.Deployment.Controllers.DeploymentPlanController"
 msgid "Deployment plans successfully deleted."
 msgstr "Käyttöönottosuunnitelmat on poistettu onnistuneesti."
 
 #. ModelState.AddModelError(nameof(CreateDeploymentPlanViewModel.Name), S["The name is mandatory."]);
 #. ModelState.AddModelError(nameof(EditDeploymentPlanViewModel.Name), S["The name is mandatory."]);
-#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:220
-#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:285
+#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:217
+#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:282
 msgctxt "OrchardCore.Deployment.Controllers.DeploymentPlanController"
 msgid "The name is mandatory."
 msgstr "Nimi on pakollinen."
 
 #. ModelState.AddModelError(nameof(CreateDeploymentPlanViewModel.Name), S["A deployment plan with the same name already exists."]);
 #. ModelState.AddModelError(nameof(CreateDeploymentPlanViewModel.Name), S["A deployment plan with the same name already exists."]);
-#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:226
-#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:292
+#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:223
+#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:289
 msgctxt "OrchardCore.Deployment.Controllers.DeploymentPlanController"
 msgid "A deployment plan with the same name already exists."
 msgstr "Samanniminen käyttöönottosuunnitelma on jo olemassa."
 
 #. await _notifier.SuccessAsync(H["Deployment plan updated successfully."]);
-#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:303
+#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:300
 msgctxt "OrchardCore.Deployment.Controllers.DeploymentPlanController"
 msgid "Deployment plan updated successfully."
 msgstr "Käyttöönottosuunnitelma on päivitetty onnistuneesti."
 
 #. await _notifier.SuccessAsync(H["Deployment plan deleted successfully."]);
-#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:329
+#: OrchardCore.Deployment\Controllers\DeploymentPlanController.cs:326
 msgctxt "OrchardCore.Deployment.Controllers.DeploymentPlanController"
 msgid "Deployment plan deleted successfully."
 msgstr "Käyttöönottosuunnitelma on poistettu onnistuneesti."
 
 #. await _notifier.ErrorAsync(H["Only zip or json files are supported."]);
-#: OrchardCore.Deployment\Controllers\ImportController.cs:88
+#: OrchardCore.Deployment\Controllers\ImportController.cs:84
 msgctxt "OrchardCore.Deployment.Controllers.ImportController"
 msgid "Only zip or json files are supported."
 msgstr "Vain zip- tai json-tiedostot ovat tuettuja."
 
 #. await _notifier.SuccessAsync(H["Deployment package imported."]);
-#: OrchardCore.Deployment\Controllers\ImportController.cs:95
+#: OrchardCore.Deployment\Controllers\ImportController.cs:91
 msgctxt "OrchardCore.Deployment.Controllers.ImportController"
 msgid "Deployment package imported."
 msgstr "Käyttöönottopaketti tuotu."
 
-#. await _notifier.ErrorAsync(H["The import failed with the following errors: {0}", string.Join(' ', e.StepResult.Errors)]);
-#: OrchardCore.Deployment\Controllers\ImportController.cs:101
-msgctxt "OrchardCore.Deployment.Controllers.ImportController"
-msgid "The import failed with the following errors: {0}"
-msgstr ""
-
-#. await _notifier.ErrorAsync(H["Unexpected error occurred while importing the deployment package."]);
-#: OrchardCore.Deployment\Controllers\ImportController.cs:107
-msgctxt "OrchardCore.Deployment.Controllers.ImportController"
-msgid "Unexpected error occurred while importing the deployment package."
-msgstr ""
-
 #. await _notifier.ErrorAsync(H["Please add a file to import."]);
-#: OrchardCore.Deployment\Controllers\ImportController.cs:124
+#: OrchardCore.Deployment\Controllers\ImportController.cs:108
 msgctxt "OrchardCore.Deployment.Controllers.ImportController"
 msgid "Please add a file to import."
 msgstr "Lisää tuotava tiedosto."
 
-#. ModelState.AddModelError(nameof(model.Json), S["The recipe is written in an incorrect JSON format."]);
-#: OrchardCore.Deployment\Controllers\ImportController.cs:150
+#. ModelState.AddModelError(nameof(model.Json), S["The recipe is written in an incorrect json format."]);
+#: OrchardCore.Deployment\Controllers\ImportController.cs:134
 msgctxt "OrchardCore.Deployment.Controllers.ImportController"
-msgid "The recipe is written in an incorrect JSON format."
-msgstr ""
+msgid "The recipe is written in an incorrect json format."
+msgstr "Resepti on kirjoitettu väärään json-formaattiin."
 
-#. await _notifier.SuccessAsync(H["Recipe imported successfully!"]);
-#: OrchardCore.Deployment\Controllers\ImportController.cs:164
+#. await _notifier.SuccessAsync(H["Recipe imported."]);
+#: OrchardCore.Deployment\Controllers\ImportController.cs:148
 msgctxt "OrchardCore.Deployment.Controllers.ImportController"
-msgid "Recipe imported successfully!"
-msgstr ""
-
-#. ModelState.AddModelError(string.Empty, S["Unexpected error occurred while importing the recipe."]);
-#: OrchardCore.Deployment\Controllers\ImportController.cs:176
-msgctxt "OrchardCore.Deployment.Controllers.ImportController"
-msgid "Unexpected error occurred while importing the recipe."
-msgstr ""
+msgid "Recipe imported."
+msgstr "Resepti on tuotu."
 
 #. await _notifier.SuccessAsync(H["Deployment plan step added successfully."]);
-#: OrchardCore.Deployment\Controllers\StepController.cs:112
+#: OrchardCore.Deployment\Controllers\StepController.cs:117
 msgctxt "OrchardCore.Deployment.Controllers.StepController"
 msgid "Deployment plan step added successfully."
 msgstr "Käyttöönottosuunnitelman vaihe on lisätty onnistuneesti."
 
 #. await _notifier.SuccessAsync(H["Deployment plan step updated successfully."]);
-#: OrchardCore.Deployment\Controllers\StepController.cs:186
+#: OrchardCore.Deployment\Controllers\StepController.cs:190
 msgctxt "OrchardCore.Deployment.Controllers.StepController"
 msgid "Deployment plan step updated successfully."
 msgstr "Käyttöönottosuunnitelman vaihe on päivitetty onnistuneesti."
 
 #. await _notifier.ErrorAsync(H["The deployment plan step has validation errors."]);
-#: OrchardCore.Deployment\Controllers\StepController.cs:190
+#: OrchardCore.Deployment\Controllers\StepController.cs:194
 msgctxt "OrchardCore.Deployment.Controllers.StepController"
 msgid "The deployment plan step has validation errors."
 msgstr "Käyttöönottosuunnitelman vaiheessa on validointivirheitä."
 
 #. await _notifier.SuccessAsync(H["Deployment step deleted successfully."]);
-#: OrchardCore.Deployment\Controllers\StepController.cs:223
+#: OrchardCore.Deployment\Controllers\StepController.cs:226
 msgctxt "OrchardCore.Deployment.Controllers.StepController"
 msgid "Deployment step deleted successfully."
 msgstr "Käyttöönoton vaihe on poistettu onnistuneesti."
 
-#. S["No changes have been made. The following types of deployment plans cannot be added: {0}. Please ensure that the related features are enabled to add these types of deployment plans.",
-#: OrchardCore.Deployment\Recipes\DeploymentPlansRecipeStep.cs:72
-msgctxt "OrchardCore.Deployment.Recipes.DeploymentPlansRecipeStep"
-msgid "No changes have been made. The following types of deployment plans cannot be added: {0}. Please ensure that the related features are enabled to add these types of deployment plans."
-msgstr ""
-
 #. name: S["File Download"],
-#: OrchardCore.Deployment\Services\FileDownloadDeploymentTargetProvider.cs:20
+#: OrchardCore.Deployment\Services\FileDownloadDeploymentTargetProvider.cs:22
 msgctxt "OrchardCore.Deployment.FileDownloadDeploymentTargetProvider"
 msgid "File Download"
 msgstr "Tiedoston lataaminen"
 
 #. description: S["Download a deployment plan locally."],
-#: OrchardCore.Deployment\Services\FileDownloadDeploymentTargetProvider.cs:21
+#: OrchardCore.Deployment\Services\FileDownloadDeploymentTargetProvider.cs:23
 msgctxt "OrchardCore.Deployment.FileDownloadDeploymentTargetProvider"
 msgid "Download a deployment plan locally."
 msgstr "Lataa käyttöönottosuunnitelma paikallisesti."
 
-#. context.Updater.ModelState.AddModelError(Prefix, nameof(JsonRecipeDeploymentStepViewModel.Json), S["The recipe must have a name property"]);
-#: OrchardCore.Deployment\Steps\JsonRecipeDeploymentStepDriver.cs:68
+#. updater.ModelState.AddModelError(Prefix, nameof(JsonRecipeDeploymentStepViewModel.Json), S["The recipe must have a name property"]);
+#: OrchardCore.Deployment\Steps\JsonRecipeDeploymentStepDriver.cs:71
 msgctxt "OrchardCore.Deployment.Steps.JsonRecipeDeploymentStepDriver"
 msgid "The recipe must have a name property"
 msgstr "Suunnitelmalla on oltava nimi"
 
-#. context.Updater.ModelState.AddModelError(Prefix, nameof(JsonRecipeDeploymentStepViewModel.Json), S["Invalid JSON supplied"]);
-#: OrchardCore.Deployment\Steps\JsonRecipeDeploymentStepDriver.cs:74
+#. updater.ModelState.AddModelError(Prefix, nameof(JsonRecipeDeploymentStepViewModel.Json), S["Invalid JSON supplied"]);
+#: OrchardCore.Deployment\Steps\JsonRecipeDeploymentStepDriver.cs:77
 msgctxt "OrchardCore.Deployment.Steps.JsonRecipeDeploymentStepDriver"
 msgid "Invalid JSON supplied"
 msgstr "JSON on virheellinen"
@@ -198,7 +174,7 @@ msgctxt "OrchardCore.Deployment.Views.DeploymentPlan.Create"
 msgid "Create Deployment Plan"
 msgstr "Luo käyttöönottosuunnitelma"
 
-#. <label asp-for="Name" class="form-label">@T["Name"]</label>
+#. <label asp-for="Name">@T["Name"]</label>
 #: OrchardCore.Deployment\Views\DeploymentPlan\Create.cshtml:8
 msgctxt "OrchardCore.Deployment.Views.DeploymentPlan.Create"
 msgid "Name"
@@ -246,7 +222,7 @@ msgctxt "OrchardCore.Deployment.Views.Items.CustomFileDeploymentStep.Fields.Edit
 msgid "The custom file to add as part of the plan."
 msgstr "Kustomoitu tiedosto, joka lisätään suunnitelman osaksi."
 
-#. <label asp-for="FileName" class="form-label">@T["File Name"]</label>
+#. <label asp-for="FileName">@T["File Name"]</label>
 #: OrchardCore.Deployment\Views\Items\CustomFileDeploymentStep.Fields.Edit.cshtml:14
 msgctxt "OrchardCore.Deployment.Views.Items.CustomFileDeploymentStep.Fields.Edit"
 msgid "File Name"
@@ -258,7 +234,7 @@ msgctxt "OrchardCore.Deployment.Views.Items.CustomFileDeploymentStep.Fields.Edit
 msgid "The filename as it will be added in the archive."
 msgstr "Tiedostonimi sellaisena kuin se lisätään arkistoon."
 
-#. <label asp-for="FileContent" class="form-label">@T["File Content"]</label>
+#. <label asp-for="FileContent">@T["File Content"]</label>
 #: OrchardCore.Deployment\Views\Items\CustomFileDeploymentStep.Fields.Edit.cshtml:21
 msgctxt "OrchardCore.Deployment.Views.Items.CustomFileDeploymentStep.Fields.Edit"
 msgid "File Content"
@@ -312,13 +288,13 @@ msgctxt "OrchardCore.Deployment.Views.Items.DeploymentPlanDeploymentStep.Fields.
 msgid "Deployment Plans"
 msgstr "Käyttöönottosuunnitelmat"
 
-#. <span class="badge text-bg-success">@T["All"]</span>
+#. <span class="badge bg-success">@T["All"]</span>
 #: OrchardCore.Deployment\Views\Items\DeploymentPlanDeploymentStep.Fields.Summary.cshtml:15
 msgctxt "OrchardCore.Deployment.Views.Items.DeploymentPlanDeploymentStep.Fields.Summary"
 msgid "All"
 msgstr "Kaikki"
 
-#. <span class="badge text-bg-warning">@T["No deployment plan selected."]</span>
+#. <span class="badge bg-warning">@T["No deployment plan selected."]</span>
 #: OrchardCore.Deployment\Views\Items\DeploymentPlanDeploymentStep.Fields.Summary.cshtml:26
 msgctxt "OrchardCore.Deployment.Views.Items.DeploymentPlanDeploymentStep.Fields.Summary"
 msgid "No deployment plan selected."
@@ -424,7 +400,7 @@ msgctxt "OrchardCore.Deployment.Views.DeploymentPlan.Edit"
 msgid "Edit Deployment Plan"
 msgstr "Muokkaa käyttöönottosuunnitelmaa"
 
-#. <label asp-for="Name" class="form-label">@T["Name"]</label>
+#. <label asp-for="Name">@T["Name"]</label>
 #: OrchardCore.Deployment\Views\DeploymentPlan\Edit.cshtml:9
 msgctxt "OrchardCore.Deployment.Views.DeploymentPlan.Edit"
 msgid "Name"
@@ -598,7 +574,7 @@ msgctxt "OrchardCore.Deployment.Views.Items.JsonRecipeDeploymentStep.Fields.Edit
 msgid "JSON Recipe"
 msgstr "JSON suunnitelma"
 
-#. <label asp-for="Json" class="form-label">@T["Recipe"]</label>
+#. <label asp-for="Json">@T["Recipe"]</label>
 #: OrchardCore.Deployment\Views\Items\JsonRecipeDeploymentStep.Fields.Edit.cshtml:8
 msgctxt "OrchardCore.Deployment.Views.Items.JsonRecipeDeploymentStep.Fields.Edit"
 msgid "Recipe"
@@ -640,7 +616,7 @@ msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit
 msgid "The recipe file to add as part of the plan."
 msgstr "Reseptitiedosto, joka lisätään suunnitelman osaksi."
 
-#. <label asp-for="RecipeName" class="form-label">@T["Recipe Name"]</label>
+#. <label asp-for="RecipeName">@T["Recipe Name"]</label>
 #: OrchardCore.Deployment\Views\Items\RecipeFileDeploymentStep.Fields.Edit.cshtml:15
 msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit"
 msgid "Recipe Name"
@@ -652,7 +628,7 @@ msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit
 msgid "The recipe name."
 msgstr "Reseptin nimi."
 
-#. <label asp-for="DisplayName" class="form-label">@T["Display Name"]</label>
+#. <label asp-for="DisplayName">@T["Display Name"]</label>
 #: OrchardCore.Deployment\Views\Items\RecipeFileDeploymentStep.Fields.Edit.cshtml:21
 msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit"
 msgid "Display Name"
@@ -664,7 +640,7 @@ msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit
 msgid "The recipe display name."
 msgstr "Reseptin näyttönimi."
 
-#. <label asp-for="Description" class="form-label">@T["Description"]</label>
+#. <label asp-for="Description">@T["Description"]</label>
 #: OrchardCore.Deployment\Views\Items\RecipeFileDeploymentStep.Fields.Edit.cshtml:29
 msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit"
 msgid "Description"
@@ -676,7 +652,7 @@ msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit
 msgid "The recipe description."
 msgstr "Reseptin kuvaus."
 
-#. <label asp-for="Author" class="form-label">@T["Author"]</label>
+#. <label asp-for="Author">@T["Author"]</label>
 #: OrchardCore.Deployment\Views\Items\RecipeFileDeploymentStep.Fields.Edit.cshtml:35
 msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit"
 msgid "Author"
@@ -688,7 +664,7 @@ msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit
 msgid "The recipe author."
 msgstr "Reseptin tekijä."
 
-#. <label asp-for="WebSite" class="form-label">@T["WebSite"]</label>
+#. <label asp-for="WebSite">@T["WebSite"]</label>
 #: OrchardCore.Deployment\Views\Items\RecipeFileDeploymentStep.Fields.Edit.cshtml:43
 msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit"
 msgid "WebSite"
@@ -700,7 +676,7 @@ msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit
 msgid "The recipe web site."
 msgstr "Reseptin www-sivusto."
 
-#. <label asp-for="Version" class="form-label">@T["Version"]</label>
+#. <label asp-for="Version">@T["Version"]</label>
 #: OrchardCore.Deployment\Views\Items\RecipeFileDeploymentStep.Fields.Edit.cshtml:49
 msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit"
 msgid "Version"
@@ -712,7 +688,7 @@ msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit
 msgid "The recipe version."
 msgstr "Reseptin versio."
 
-#. <label asp-for="Categories" class="form-label">@T["Categories"]</label>
+#. <label asp-for="Categories">@T["Categories"]</label>
 #: OrchardCore.Deployment\Views\Items\RecipeFileDeploymentStep.Fields.Edit.cshtml:57
 msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit"
 msgid "Categories"
@@ -724,7 +700,7 @@ msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit
 msgid "The recipe categories (comma separated values)."
 msgstr "Reseptin kategoriat (pilkulla erotettuna)."
 
-#. <label asp-for="Tags" class="form-label">@T["Tags"]</label>
+#. <label asp-for="Tags">@T["Tags"]</label>
 #: OrchardCore.Deployment\Views\Items\RecipeFileDeploymentStep.Fields.Edit.cshtml:63
 msgctxt "OrchardCore.Deployment.Views.Items.RecipeFileDeploymentStep.Fields.Edit"
 msgid "Tags"

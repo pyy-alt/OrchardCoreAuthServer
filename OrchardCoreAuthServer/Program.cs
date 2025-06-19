@@ -1,7 +1,6 @@
 // 如果之前删除了 using OrchardCore.Logging; 导致不报错，可以不加这行。
 // 如果报错，说明你需要它，或者有其他配置问题。
 // using OrchardCore.Logging; 
-
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -20,6 +19,23 @@ builder.Services.AddCors(options =>
 // 配置 Orchard Core 服务
 // 这是将你的 ASP.NET Core 项目转换为 Orchard Core 的核心方法
 builder.Services.AddOrchardCms(); 
+
+
+
+// // --- 开始添加这些行，用于显式注册 UserManager ---
+// builder.Services.AddScoped<Microsoft.AspNetCore.Identity.UserManager<OrchardCore.Users.Models.User>>();
+// builder.Services.AddScoped<Microsoft.AspNetCore.Identity.SignInManager<OrchardCore.Users.Models.User>>();
+//
+// // !!! 关键修复 !!!
+// // 显式注册 Orchard Core 的 IUserStore 实现
+// builder.Services.AddScoped<
+//     Microsoft.AspNetCore.Identity.IUserStore<OrchardCore.Users.Models.User>,
+//     OrchardCore.Users.Services.UserStore
+// >();
+// // --- 结束添加这些行 ---
+
+
+
 
 // !!! 关键修复 !!!
 // 在使用 app.UseAuthorization() 之前，必须先添加授权服务

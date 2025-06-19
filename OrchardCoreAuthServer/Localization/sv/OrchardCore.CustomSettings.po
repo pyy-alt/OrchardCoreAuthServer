@@ -10,25 +10,19 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Swedish\n"
 "Language: sv_SE\n"
-"PO-Revision-Date: 2024-09-09 17:00\n"
+"PO-Revision-Date: 2023-07-18 15:50\n"
 
 #. .Add(S["Configuration"], configuration => configuration
-#: OrchardCore.CustomSettings\AdminMenu.cs:44
+#: OrchardCore.CustomSettings\AdminMenu.cs:33
 msgctxt "OrchardCore.CustomSettings.AdminMenu"
 msgid "Configuration"
 msgstr "Konfiguration"
 
 #. .Add(S["Settings"], settings => settings
-#: OrchardCore.CustomSettings\AdminMenu.cs:45
+#: OrchardCore.CustomSettings\AdminMenu.cs:34
 msgctxt "OrchardCore.CustomSettings.AdminMenu"
 msgid "Settings"
 msgstr "Inställningar"
-
-#. [new StereotypeDescription { Stereotype = "CustomSettings", DisplayName = S["Custom Settings"] }]);
-#: OrchardCore.CustomSettings\Services\CustomSettingsStereotypesProvider.cs:18
-msgctxt "OrchardCore.CustomSettings.Services.CustomSettingsStereotypesProvider"
-msgid "Custom Settings"
-msgstr ""
 
 #. <h5>@T["Custom Settings"]</h5>
 #: OrchardCore.CustomSettings\Views\Items\CustomSettingsDeploymentStep.Fields.Edit.cshtml:8
@@ -54,13 +48,13 @@ msgctxt "OrchardCore.CustomSettings.Views.Items.CustomSettingsDeploymentStep.Fie
 msgid "Custom Settings"
 msgstr "Anpassade inställningar"
 
-#. <span class="badge text-bg-success">@T["All"]</span>
+#. <span class="badge bg-success">@T["All"]</span>
 #: OrchardCore.CustomSettings\Views\Items\CustomSettingsDeploymentStep.Fields.Summary.cshtml:12
 msgctxt "OrchardCore.CustomSettings.Views.Items.CustomSettingsDeploymentStep.Fields.Summary"
 msgid "All"
 msgstr "Alla"
 
-#. <span class="badge text-bg-warning">@T["No custom settings selected."]</span>
+#. <span class="badge bg-warning">@T["No custom settings selected."]</span>
 #: OrchardCore.CustomSettings\Views\Items\CustomSettingsDeploymentStep.Fields.Summary.cshtml:23
 msgctxt "OrchardCore.CustomSettings.Views.Items.CustomSettingsDeploymentStep.Fields.Summary"
 msgid "No custom settings selected."

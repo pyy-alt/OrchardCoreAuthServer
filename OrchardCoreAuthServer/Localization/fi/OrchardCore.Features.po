@@ -10,24 +10,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Finnish\n"
 "Language: fi_FI\n"
-"PO-Revision-Date: 2024-09-09 17:03\n"
+"PO-Revision-Date: 2023-07-18 15:55\n"
 
 #. .Add(S["Configuration"], configuration => configuration
-#: OrchardCore.Features\AdminMenu.cs:26
+#: OrchardCore.Features\AdminMenu.cs:25
 msgctxt "OrchardCore.Features.AdminMenu"
 msgid "Configuration"
 msgstr "Konfigurointi"
 
 #. .Add(S["Features"], S["Features"].PrefixPosition(), deployment => deployment
 #. .Add(S["Features"], S["Features"].PrefixPosition(), deployment => deployment
-#: OrchardCore.Features\AdminMenu.cs:27
-#: OrchardCore.Features\AdminMenu.cs:27
+#: OrchardCore.Features\AdminMenu.cs:26
+#: OrchardCore.Features\AdminMenu.cs:26
 msgctxt "OrchardCore.Features.AdminMenu"
 msgid "Features"
 msgstr "Ominaisuudet"
 
 #. ModelState.AddModelError(nameof(BulkActionViewModel.FeatureIds), S["Please select one or more features."]);
-#: OrchardCore.Features\Controllers\AdminController.cs:90
+#: OrchardCore.Features\Controllers\AdminController.cs:91
 msgctxt "OrchardCore.Features.Controllers.AdminController"
 msgid "Please select one or more features."
 msgstr "Valitse yksi tai useampi ominaisuus."
@@ -39,19 +39,19 @@ msgid "This feature is always enabled and cannot be disabled."
 msgstr "Tämä ominaisuus on aina käytössä, eikä sitä voi poistaa käytöstä."
 
 #. await _notifier.SuccessAsync(H["{0} was {1}.", feature.Name ?? feature.Id, enabled ? "enabled" : "disabled"]);
-#: OrchardCore.Features\Controllers\AdminController.cs:238
+#: OrchardCore.Features\Controllers\AdminController.cs:237
 msgctxt "OrchardCore.Features.Controllers.AdminController"
 msgid "{0} was {1}."
 msgstr "{0} oli {1}."
 
 #. await _notifier.SuccessAsync(H["{0} was enabled.", enabledFeature.Name]);
-#: OrchardCore.Features\Services\ModuleService.cs:68
+#: OrchardCore.Features\Services\ModuleService.cs:71
 msgctxt "OrchardCore.Features.Services.ModuleService"
 msgid "{0} was enabled."
 msgstr "{0} otettiin käyttöön."
 
 #. await _notifier.SuccessAsync(H["{0} was disabled.", feature.Name]);
-#: OrchardCore.Features\Services\ModuleService.cs:95
+#: OrchardCore.Features\Services\ModuleService.cs:98
 msgctxt "OrchardCore.Features.Services.ModuleService"
 msgid "{0} was disabled."
 msgstr "{0} poistettiin käytöstä."
@@ -125,9 +125,9 @@ msgstr "Massatoiminnot"
 #. <button class="btn btn-danger btn-sm" disabled>@T["Disable"]</button>
 #. <a id="btn-disable-@Html.GenerateIdFromName(featureId)" asp-action="Disable" asp-route-id="@featureId" asp-route-tenant="@Model.Name" class="btn btn-danger btn-sm" data-title="@T["Disable Feature"]" data-message="@confirmationMessage" data-ok-text="@T["Yes"]" data-cancel-text="@T["No"]" data-url-af="UnsafeUrl RemoveUrl">@T["Disable"]</a>
 #: OrchardCore.Features\Views\Admin\Features.cshtml:32
-#: OrchardCore.Features\Views\Admin\Features.cshtml:135
-#: OrchardCore.Features\Views\Admin\Features.cshtml:148
-#: OrchardCore.Features\Views\Admin\Features.cshtml:165
+#: OrchardCore.Features\Views\Admin\Features.cshtml:130
+#: OrchardCore.Features\Views\Admin\Features.cshtml:143
+#: OrchardCore.Features\Views\Admin\Features.cshtml:160
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "Disable"
 msgstr "Poista käytöstä"
@@ -136,8 +136,8 @@ msgstr "Poista käytöstä"
 #. <button class="btn btn-primary btn-sm" disabled>@T["Enable"]</button>
 #. <a id="btn-enable-@Html.GenerateIdFromName(featureId)" asp-action="Enable" asp-route-id="@featureId" asp-route-tenant="@Model.Name" class="btn btn-primary btn-sm" data-url-af="UnsafeUrl">@T["Enable"]</a>
 #: OrchardCore.Features\Views\Admin\Features.cshtml:33
-#: OrchardCore.Features\Views\Admin\Features.cshtml:141
-#: OrchardCore.Features\Views\Admin\Features.cshtml:155
+#: OrchardCore.Features\Views\Admin\Features.cshtml:136
+#: OrchardCore.Features\Views\Admin\Features.cshtml:150
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "Enable"
 msgstr "Ota käyttöön"
@@ -154,19 +154,19 @@ msgid "Uncategorized"
 msgstr "Luokittelematon"
 
 #. <div data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="@T["This feature is automatically enabled based on dependency and cannot be manually disabled."]">
-#: OrchardCore.Features\Views\Admin\Features.cshtml:134
+#: OrchardCore.Features\Views\Admin\Features.cshtml:129
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "This feature is automatically enabled based on dependency and cannot be manually disabled."
 msgstr "Tämä ominaisuus on automaattisesti käytössä riippuvuuden perusteella eikä sitä voida manuaalisesti poistaa käytöstä."
 
 #. <div data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="@T["This feature is automatically disabled based on dependency and cannot be manually enabled."]">
-#: OrchardCore.Features\Views\Admin\Features.cshtml:140
+#: OrchardCore.Features\Views\Admin\Features.cshtml:135
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "This feature is automatically disabled based on dependency and cannot be manually enabled."
 msgstr "Tämä ominaisuus on poistettu käytöstä automaattisesti riippuvuuden perusteella eikä sitä voi ottaa manuaalisesti käyttöön."
 
 #. <div data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="@T["This feature is always enabled and cannot be manually disabled."]">
-#: OrchardCore.Features\Views\Admin\Features.cshtml:147
+#: OrchardCore.Features\Views\Admin\Features.cshtml:142
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "This feature is always enabled and cannot be manually disabled."
 msgstr "Tämä ominaisuus on aina käytössä, eikä sitä voi poistaa manuaalisesti."
@@ -182,25 +182,25 @@ msgid "Disabling the {0} feature will also disable the following dependent featu
 msgstr "Kun {0}-ominaisuus poistetaan käytöstä, seuraavat siitä riippuvaiset ominaisuudet poistetaan myös käytöstä: {1}. Jatketaanko?"
 
 #. <a id="btn-disable-@Html.GenerateIdFromName(featureId)" asp-action="Disable" asp-route-id="@featureId" asp-route-tenant="@Model.Name" class="btn btn-danger btn-sm" data-title="@T["Disable Feature"]" data-message="@confirmationMessage" data-ok-text="@T["Yes"]" data-cancel-text="@T["No"]" data-url-af="UnsafeUrl RemoveUrl">@T["Disable"]</a>
-#: OrchardCore.Features\Views\Admin\Features.cshtml:165
+#: OrchardCore.Features\Views\Admin\Features.cshtml:160
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "Disable Feature"
 msgstr "Poista ominaisuus käytöstä"
 
 #. <a id="btn-disable-@Html.GenerateIdFromName(featureId)" asp-action="Disable" asp-route-id="@featureId" asp-route-tenant="@Model.Name" class="btn btn-danger btn-sm" data-title="@T["Disable Feature"]" data-message="@confirmationMessage" data-ok-text="@T["Yes"]" data-cancel-text="@T["No"]" data-url-af="UnsafeUrl RemoveUrl">@T["Disable"]</a>
-#: OrchardCore.Features\Views\Admin\Features.cshtml:165
+#: OrchardCore.Features\Views\Admin\Features.cshtml:160
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "Yes"
 msgstr "Kyllä"
 
 #. <a id="btn-disable-@Html.GenerateIdFromName(featureId)" asp-action="Disable" asp-route-id="@featureId" asp-route-tenant="@Model.Name" class="btn btn-danger btn-sm" data-title="@T["Disable Feature"]" data-message="@confirmationMessage" data-ok-text="@T["Yes"]" data-cancel-text="@T["No"]" data-url-af="UnsafeUrl RemoveUrl">@T["Disable"]</a>
-#: OrchardCore.Features\Views\Admin\Features.cshtml:165
+#: OrchardCore.Features\Views\Admin\Features.cshtml:160
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "No"
 msgstr "Ei"
 
 #. @T["<strong>Nothing here!</strong> Your search returned no results."]
-#: OrchardCore.Features\Views\Admin\Features.cshtml:177
+#: OrchardCore.Features\Views\Admin\Features.cshtml:172
 msgctxt "OrchardCore.Features.Views.Admin.Features"
 msgid "<strong>Nothing here!</strong> Your search returned no results."
 msgstr "<strong>Tyhjää täynnä!</strong> Hakusi ei tuottanut tuloksia."

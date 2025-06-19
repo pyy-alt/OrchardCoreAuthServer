@@ -10,32 +10,28 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Arabic\n"
 "Language: ar_SA\n"
-"PO-Revision-Date: 2024-09-09 17:19\n"
+"PO-Revision-Date: 2023-07-18 16:30\n"
 
 #. .Add(S["Search"], NavigationConstants.AdminMenuSearchPosition, search => search
-#: OrchardCore.Search\AdminMenu.cs:25
+#. .Add(S["Search"], S["Search"].PrefixPosition(), entry => entry
+#. .Add(S["Search"], S["Search"].PrefixPosition(), entry => entry
+#: OrchardCore.Search\AdminMenu.cs:26
+#: OrchardCore.Search\AdminMenu.cs:29
+#: OrchardCore.Search\AdminMenu.cs:29
 msgctxt "OrchardCore.Search.AdminMenu"
 msgid "Search"
 msgstr "بحث"
 
-#. .Add(S["Settings"], S["Settings"].PrefixPosition(), settings => settings
-#. .Add(S["Settings"], S["Settings"].PrefixPosition(), settings => settings
-#: OrchardCore.Search\AdminMenu.cs:28
+#. .Add(S["Settings"], settings => settings
 #: OrchardCore.Search\AdminMenu.cs:28
 msgctxt "OrchardCore.Search.AdminMenu"
 msgid "Settings"
 msgstr "الإعدادات"
 
 #. await _notifier.WarningAsync(H["No search provider feature is enabled."]);
-#: OrchardCore.Search\Controllers\SearchController.cs:63
+#: OrchardCore.Search\Controllers\SearchController.cs:68
 msgctxt "OrchardCore.Search.SearchController"
 msgid "No search provider feature is enabled."
-msgstr ""
-
-#. <span class="title">@T["Search"]</span>
-#: OrchardCore.Search\Views\NavigationItemText-search.Id.cshtml:4
-msgctxt "OrchardCore.Search.Views.NavigationItemText-search.Id"
-msgid "Search"
 msgstr ""
 
 #: OrchardCore.Search\Views\Search-Form.cshtml:0
@@ -61,7 +57,7 @@ msgctxt "OrchardCore.Search.Views.SearchFormPart"
 msgid "Search"
 msgstr ""
 
-#. <label asp-for="Placeholder" class="@Orchard.GetLabelClasses()">@T["Placeholder"]</label>
+#. <label asp-for="Placeholder" class="@Orchard.GetLabelCssClasses()">@T["Placeholder"]</label>
 #: OrchardCore.Search\Views\SearchFormPart.Edit.cshtml:6
 msgctxt "OrchardCore.Search.Views.SearchFormPart.Edit"
 msgid "Placeholder"
@@ -73,7 +69,7 @@ msgctxt "OrchardCore.Search.Views.SearchFormPart.Edit"
 msgid "The placeholder text to use in the search bar."
 msgstr ""
 
-#. <label asp-for="IndexName" class="@Orchard.GetLabelClasses()">@T["Index Name"]</label>
+#. <label asp-for="IndexName" class="@Orchard.GetLabelCssClasses()">@T["Index Name"]</label>
 #: OrchardCore.Search\Views\SearchFormPart.Edit.cshtml:14
 msgctxt "OrchardCore.Search.Views.SearchFormPart.Edit"
 msgid "Index Name"
@@ -85,7 +81,7 @@ msgctxt "OrchardCore.Search.Views.SearchFormPart.Edit"
 msgid "Leave it empty to use the default index."
 msgstr ""
 
-#. <label asp-for="ProviderName" class="form-label">@T["Default search provider"]</label>
+#. <label asp-for="ProviderName">@T["Default search provider"]</label>
 #: OrchardCore.Search\Views\SearchSettings.Edit.cshtml:6
 msgctxt "OrchardCore.Search.Views.SearchSettings.Edit"
 msgid "Default search provider"
@@ -97,7 +93,7 @@ msgctxt "OrchardCore.Search.Views.SearchSettings.Edit"
 msgid "The default search provider to use for the search page."
 msgstr "موفر البحث الافتراضي لاستخدامه لصفحة البحث."
 
-#. <label asp-for="Placeholder" class="form-label">@T["Placeholder"]</label>
+#. <label asp-for="Placeholder">@T["Placeholder"]</label>
 #: OrchardCore.Search\Views\SearchSettings.Edit.cshtml:13
 msgctxt "OrchardCore.Search.Views.SearchSettings.Edit"
 msgid "Placeholder"
@@ -109,11 +105,11 @@ msgctxt "OrchardCore.Search.Views.SearchSettings.Edit"
 msgid "The placeholder text to use in the search bar."
 msgstr ""
 
-#. <div class="alert alert-warning">@T["You need to enable at least one search provider (Lucene, Elasticsearch, or Azure AI Search)."]</div>
+#. <div class="alert alert-warning">@T["You need to enable at least one search provider (Lucene, Elasticsearch)."]</div>
 #: OrchardCore.Search\Views\SearchSettings.Edit.cshtml:20
 msgctxt "OrchardCore.Search.Views.SearchSettings.Edit"
-msgid "You need to enable at least one search provider (Lucene, Elasticsearch, or Azure AI Search)."
-msgstr ""
+msgid "You need to enable at least one search provider (Lucene, Elasticsearch)."
+msgstr "تحتاج إلى تمكين موفر بحث واحد على الأقل (Lucene, Elasticsearch)."
 
 #. <h5>@T["Search Settings"]</h5>
 #: OrchardCore.Search\Views\Items\SearchSettingsDeploymentStep.Fields.Edit.cshtml:3

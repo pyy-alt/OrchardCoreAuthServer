@@ -10,24 +10,24 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Greek\n"
 "Language: el_GR\n"
-"PO-Revision-Date: 2024-11-10 14:36\n"
+"PO-Revision-Date: 2023-08-17 17:22\n"
 
 #. await builder.AddAsync(S["Content"], NavigationConstants.AdminMenuContentPosition, async content =>
-#: OrchardCore.Contents\AdminMenu.cs:65
+#: OrchardCore.Contents\AdminMenu.cs:60
 msgctxt "OrchardCore.Contents.AdminMenu"
 msgid "Content"
 msgstr "Περιεχόμενο"
 
 #. await content.AddAsync(S["Content Items"], S["Content Items"].PrefixPosition(), async contentItems =>
 #. await content.AddAsync(S["Content Items"], S["Content Items"].PrefixPosition(), async contentItems =>
-#: OrchardCore.Contents\AdminMenu.cs:68
-#: OrchardCore.Contents\AdminMenu.cs:68
+#: OrchardCore.Contents\AdminMenu.cs:63
+#: OrchardCore.Contents\AdminMenu.cs:63
 msgctxt "OrchardCore.Contents.AdminMenu"
 msgid "Content Items"
 msgstr "Αντικείμενα Περιεχομένου"
 
 #. await builder.AddAsync(S["New"], "-1", async newMenu =>
-#: OrchardCore.Contents\AdminMenu.cs:88
+#: OrchardCore.Contents\AdminMenu.cs:79
 msgctxt "OrchardCore.Contents.AdminMenu"
 msgid "New"
 msgstr "Νέο"
@@ -134,230 +134,236 @@ msgctxt "OrchardCore.Contents.AuditTrail.Services.ContentAuditTrailEventConfigur
 msgid "A content item was restored to a previous version."
 msgstr "Έγινε επαναφορά ενός στοιχείου περιεχομένου σε προηγούμενη έκδοση."
 
-#. new SelectListItem(S["Latest"], nameof(ContentsStatus.Latest)),
-#: OrchardCore.Contents\Controllers\AdminController.cs:140
+#. new SelectListItem(S["Latest"], nameof(ContentsStatus.Latest), options.ContentsStatus == ContentsStatus.Latest),
+#: OrchardCore.Contents\Controllers\AdminController.cs:158
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Latest"
 msgstr "Τελευταίο"
 
-#. new SelectListItem(S["Published"], nameof(ContentsStatus.Published)),
-#: OrchardCore.Contents\Controllers\AdminController.cs:141
+#. new SelectListItem(S["Published"], nameof(ContentsStatus.Published), options.ContentsStatus == ContentsStatus.Published),
+#: OrchardCore.Contents\Controllers\AdminController.cs:159
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Published"
 msgstr "Δημοσιεύθηκε"
 
-#. new SelectListItem(S["Unpublished"], nameof(ContentsStatus.Draft)),
-#: OrchardCore.Contents\Controllers\AdminController.cs:142
+#. new SelectListItem(S["Unpublished"], nameof(ContentsStatus.Draft), options.ContentsStatus == ContentsStatus.Draft),
+#: OrchardCore.Contents\Controllers\AdminController.cs:160
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Unpublished"
 msgstr "Αδημοσίευτο"
 
-#. new SelectListItem(S["All versions"], nameof(ContentsStatus.AllVersions)),
-#: OrchardCore.Contents\Controllers\AdminController.cs:143
+#. new SelectListItem(S["All versions"], nameof(ContentsStatus.AllVersions), options.ContentsStatus == ContentsStatus.AllVersions),
+#: OrchardCore.Contents\Controllers\AdminController.cs:161
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "All versions"
 msgstr "Όλες οι εκδόσεις"
 
-#. options.ContentStatuses.Insert(1, new SelectListItem(S["Owned by me"], nameof(ContentsStatus.Owner)));
-#: OrchardCore.Contents\Controllers\AdminController.cs:148
+#. options.ContentStatuses.Insert(1, new SelectListItem() { Text = S["Owned by me"], Value = nameof(ContentsStatus.Owner) });
+#: OrchardCore.Contents\Controllers\AdminController.cs:166
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Owned by me"
 msgstr "Ανήκουν σε εμένα"
 
-#. new SelectListItem(S["Recently created"], nameof(ContentsOrder.Created)),
-#: OrchardCore.Contents\Controllers\AdminController.cs:153
+#. new SelectListItem(S["Recently created"], nameof(ContentsOrder.Created), options.OrderBy == ContentsOrder.Created),
+#: OrchardCore.Contents\Controllers\AdminController.cs:171
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Recently created"
 msgstr "Πρόσφατα δημιουργήθηκε"
 
-#. new SelectListItem(S["Recently modified"], nameof(ContentsOrder.Modified)),
-#: OrchardCore.Contents\Controllers\AdminController.cs:154
+#. new SelectListItem(S["Recently modified"], nameof(ContentsOrder.Modified),options.OrderBy == ContentsOrder.Modified ),
+#: OrchardCore.Contents\Controllers\AdminController.cs:172
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Recently modified"
 msgstr "Πρόσφατα τροποποιήθηκε"
 
-#. new SelectListItem(S["Recently published"], nameof(ContentsOrder.Published)),
-#: OrchardCore.Contents\Controllers\AdminController.cs:155
+#. new SelectListItem(S["Recently published"], nameof(ContentsOrder.Published), options.OrderBy == ContentsOrder.Published),
+#: OrchardCore.Contents\Controllers\AdminController.cs:173
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Recently published"
 msgstr "Δημοσιεύθηκε πρόσφατα"
 
-#. new SelectListItem(S["Title"], nameof(ContentsOrder.Title)),
-#: OrchardCore.Contents\Controllers\AdminController.cs:156
+#. new SelectListItem(S["Title"], nameof(ContentsOrder.Title), options.OrderBy == ContentsOrder.Title),
+#: OrchardCore.Contents\Controllers\AdminController.cs:174
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Title"
 msgstr "Τίτλος"
 
 #. new SelectListItem(S["Publish Now"], nameof(ContentsBulkAction.PublishNow)),
-#: OrchardCore.Contents\Controllers\AdminController.cs:161
+#: OrchardCore.Contents\Controllers\AdminController.cs:179
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Publish Now"
 msgstr "Δημοσίευση Τώρα"
 
 #. new SelectListItem(S["Unpublish"], nameof(ContentsBulkAction.Unpublish)),
-#: OrchardCore.Contents\Controllers\AdminController.cs:162
+#: OrchardCore.Contents\Controllers\AdminController.cs:180
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Unpublish"
 msgstr "Αναίρεση Δημοσίευσης"
 
 #. new SelectListItem(S["Delete"], nameof(ContentsBulkAction.Remove)),
-#: OrchardCore.Contents\Controllers\AdminController.cs:163
+#: OrchardCore.Contents\Controllers\AdminController.cs:181
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Delete"
 msgstr "Διαγραφή"
 
 #. await _notifier.WarningAsync(H["Couldn't publish selected content."]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:269
+#: OrchardCore.Contents\Controllers\AdminController.cs:273
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Couldn't publish selected content."
 msgstr "Δεν ήταν δυνατή η δημοσίευση επιλεγμένου περιεχομένου."
 
 #. await _notifier.SuccessAsync(H["Content published successfully."]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:276
+#: OrchardCore.Contents\Controllers\AdminController.cs:280
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Content published successfully."
 msgstr "Το περιεχόμενο δημοσιεύτηκε με επιτυχία."
 
 #. await _notifier.WarningAsync(H["Couldn't unpublish selected content."]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:283
+#: OrchardCore.Contents\Controllers\AdminController.cs:287
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Couldn't unpublish selected content."
 msgstr "Δεν ήταν δυνατή η κατάργηση της επιλεγμένης δημοσίευσης."
 
 #. await _notifier.SuccessAsync(H["Content unpublished successfully."]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:290
+#: OrchardCore.Contents\Controllers\AdminController.cs:294
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Content unpublished successfully."
 msgstr "Το περιεχόμενο καταργήθηκε από την δημοσίευση με επιτυχία."
 
 #. await _notifier.WarningAsync(H["Couldn't remove selected content."]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:297
+#: OrchardCore.Contents\Controllers\AdminController.cs:301
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Couldn't remove selected content."
 msgstr "Δεν ήταν δυνατή η κατάργηση του επιλεγμένου περιεχομένου."
 
 #. await _notifier.SuccessAsync(H["Content removed successfully."]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:304
+#: OrchardCore.Contents\Controllers\AdminController.cs:308
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Content removed successfully."
 msgstr "Το περιεχόμενο αφαιρέθηκε επιτυχώς."
 
 #. ? H["Your content draft has been saved."]
 #. ? H["Your content draft has been saved."]
-#: OrchardCore.Contents\Controllers\AdminController.cs:350
-#: OrchardCore.Contents\Controllers\AdminController.cs:443
+#: OrchardCore.Contents\Controllers\AdminController.cs:349
+#: OrchardCore.Contents\Controllers\AdminController.cs:432
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Your content draft has been saved."
 msgstr "Το προσχέδιο περιεχομένο έχει αποθηκευτεί."
 
 #. : H["Your {0} draft has been saved.", typeDefinition.DisplayName]);
 #. : H["Your {0} draft has been saved.", typeDefinition.DisplayName]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:351
-#: OrchardCore.Contents\Controllers\AdminController.cs:444
+#: OrchardCore.Contents\Controllers\AdminController.cs:350
+#: OrchardCore.Contents\Controllers\AdminController.cs:433
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Your {0} draft has been saved."
 msgstr "Το προσχέδιο σας {0} έχει αποθηκευτεί."
 
 #. ? H["Your content has been published."]
 #. ? H["Your content has been published."]
-#: OrchardCore.Contents\Controllers\AdminController.cs:382
-#: OrchardCore.Contents\Controllers\AdminController.cs:477
+#: OrchardCore.Contents\Controllers\AdminController.cs:377
+#: OrchardCore.Contents\Controllers\AdminController.cs:462
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Your content has been published."
 msgstr "Το περιεχόμενό σας έχει δημοσιευθεί."
 
 #. : H["Your {0} has been published.", typeDefinition.DisplayName]);
 #. : H["Your {0} has been published.", typeDefinition.DisplayName]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:383
-#: OrchardCore.Contents\Controllers\AdminController.cs:478
+#: OrchardCore.Contents\Controllers\AdminController.cs:378
+#: OrchardCore.Contents\Controllers\AdminController.cs:463
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Your {0} has been published."
 msgstr "Το {0} σας έχει δημοσιευθεί."
 
 #. await _notifier.WarningAsync(H["Could not clone the content item."]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:504
+#: OrchardCore.Contents\Controllers\AdminController.cs:488
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Could not clone the content item."
 msgstr "Δεν ήταν δυνατή η κλωνοποίηση του περιεχομένου."
 
 #. await _notifier.InformationAsync(H["Successfully cloned. The clone was saved as a draft."]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:510
+#: OrchardCore.Contents\Controllers\AdminController.cs:492
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "Successfully cloned. The clone was saved as a draft."
 msgstr "Κλωνοποιήθηκε με επιτυχία. Ο κλώνος αποθηκεύτηκε ως προσχέδιο."
 
 #. ? H["The draft has been removed."]
-#: OrchardCore.Contents\Controllers\AdminController.cs:540
+#: OrchardCore.Contents\Controllers\AdminController.cs:519
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "The draft has been removed."
 msgstr "Το προσχέδιο έχει αφαιρεθεί."
 
 #. : H["The {0} draft has been removed.", typeDefinition.DisplayName]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:541
+#: OrchardCore.Contents\Controllers\AdminController.cs:520
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "The {0} draft has been removed."
 msgstr "Το προσχέδιο {0} έχει καταργηθεί."
 
 #. ? H["That content has been removed."]
-#: OrchardCore.Contents\Controllers\AdminController.cs:567
+#: OrchardCore.Contents\Controllers\AdminController.cs:543
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "That content has been removed."
 msgstr "Αυτό το περιεχόμενο έχει καταργηθεί."
 
 #. : H["That {0} has been removed.", typeDefinition.DisplayName]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:568
+#: OrchardCore.Contents\Controllers\AdminController.cs:544
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "That {0} has been removed."
 msgstr "Αυτό το {0} έχει καταργηθεί."
 
 #. await _notifier.SuccessAsync(H["That content has been published."]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:597
+#: OrchardCore.Contents\Controllers\AdminController.cs:570
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "That content has been published."
 msgstr "Το περιεχόμενο αυτό έχει δημοσιευθεί."
 
 #. await _notifier.SuccessAsync(H["That {0} has been published.", typeDefinition.DisplayName]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:601
+#: OrchardCore.Contents\Controllers\AdminController.cs:574
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "That {0} has been published."
 msgstr "Αυτό το {0} έχει δημοσιευθεί."
 
 #. await _notifier.SuccessAsync(H["The content has been unpublished."]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:630
+#: OrchardCore.Contents\Controllers\AdminController.cs:600
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "The content has been unpublished."
 msgstr "Η δημοσίευση του περιεχομένου ανακλήθηκε."
 
 #. await _notifier.SuccessAsync(H["The {0} has been unpublished.", typeDefinition.DisplayName]);
-#: OrchardCore.Contents\Controllers\AdminController.cs:634
+#: OrchardCore.Contents\Controllers\AdminController.cs:604
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "The {0} has been unpublished."
 msgstr "Η δημοσίευση του {0} ανακλήθηκε."
 
-#. items.Add(new SelectListItem(S["All content types"], string.Empty));
-#: OrchardCore.Contents\Controllers\AdminController.cs:765
+#. items.Add(new SelectListItem(S["All content types"], String.Empty));
+#: OrchardCore.Contents\Controllers\AdminController.cs:713
 msgctxt "OrchardCore.Contents.Controllers.AdminController"
 msgid "All content types"
 msgstr "Όλοι οι τύποι περιεχομένου"
 
+#. Title = S["One or more validation errors occurred."],
+#. Title = S["One or more validation errors occurred."],
+#: OrchardCore.Contents\Controllers\ApiController.cs:133
+#: OrchardCore.Contents\Controllers\ApiController.cs:163
+msgctxt "OrchardCore.Contents.Controllers.ApiController"
+msgid "One or more validation errors occurred."
+msgstr "Παρουσιάστηκε ένα ή περισσότερα σφάλματα επικύρωσης."
+
 #. await _notifier.SuccessAsync(H["Content added successfully to the deployment plan."]);
 #. await _notifier.SuccessAsync(H["Content added successfully to the deployment plan."]);
-#: OrchardCore.Contents\Deployment\AddToDeploymentPlan\AddToDeploymentPlanController.cs:88
-#: OrchardCore.Contents\Deployment\AddToDeploymentPlan\AddToDeploymentPlanController.cs:144
+#: OrchardCore.Contents\Deployment\AddToDeploymentPlan\AddToDeploymentPlanController.cs:90
+#: OrchardCore.Contents\Deployment\AddToDeploymentPlan\AddToDeploymentPlanController.cs:137
 msgctxt "OrchardCore.Contents.Deployment.AddToDeploymentPlan.AddToDeploymentPlanController"
 msgid "Content added successfully to the deployment plan."
 msgstr "Το περιεχόμενο προστέθηκε με επιτυχία στο σχέδιο ανάπτυξης."
 
 #. await _notifier.WarningAsync(H["Couldn't add selected content to deployment plan."]);
-#. await _notifier.WarningAsync(H["Couldn't add selected content to deployment plan."]);
-#: OrchardCore.Contents\Deployment\AddToDeploymentPlan\AddToDeploymentPlanController.cs:125
-#: OrchardCore.Contents\Deployment\AddToDeploymentPlan\AddToDeploymentPlanController.cs:134
+#: OrchardCore.Contents\Deployment\AddToDeploymentPlan\AddToDeploymentPlanController.cs:127
 msgctxt "OrchardCore.Contents.Deployment.AddToDeploymentPlan.AddToDeploymentPlanController"
 msgid "Couldn't add selected content to deployment plan."
 msgstr "Δεν ήταν δυνατή η προσθήκη του επιλεγμένου περιεχομένου στο σχέδιο ανάπτυξης."
 
-#. context.Updater.ModelState.AddModelError(Prefix, nameof(step.ContentItemId), S["Your content item does not exist."]);
-#: OrchardCore.Contents\Deployment\AddToDeploymentPlan\ContentItemDeploymentStepDriver.cs:49
+#. updater.ModelState.AddModelError(Prefix, nameof(step.ContentItemId), S["Your content item does not exist."]);
+#: OrchardCore.Contents\Deployment\AddToDeploymentPlan\ContentItemDeploymentStepDriver.cs:50
 msgctxt "OrchardCore.Contents.Deployment.AddToDeploymentPlan.ContentItemDeploymentStepDriver"
 msgid "Your content item does not exist."
 msgstr "Το αντικείμενο περιεχομένου σας δεν υπάρχει."
@@ -382,8 +388,8 @@ msgctxt "OrchardCore.Contents.Deployment.ExportContentToDeploymentTarget.ExportC
 msgid "Settings"
 msgstr "Ρυθμίσεις"
 
-#. .Add(S["Export Target Settings"], S["Export Target Settings"].PrefixPosition(), targetSettings => targetSettings
-#. .Add(S["Export Target Settings"], S["Export Target Settings"].PrefixPosition(), targetSettings => targetSettings
+#. .Add(S["Export Target Settings"], S["Export Target Settings"].PrefixPosition(), deployment => deployment
+#. .Add(S["Export Target Settings"], S["Export Target Settings"].PrefixPosition(), deployment => deployment
 #: OrchardCore.Contents\Deployment\ExportContentToDeploymentTarget\ExportContentToDeploymentTargetAdminMenu.cs:28
 #: OrchardCore.Contents\Deployment\ExportContentToDeploymentTarget\ExportContentToDeploymentTargetAdminMenu.cs:28
 msgctxt "OrchardCore.Contents.Deployment.ExportContentToDeploymentTarget.ExportContentToDeploymentTargetAdminMenu"
@@ -391,25 +397,25 @@ msgid "Export Target Settings"
 msgstr "Εξαγωγή Ρυθμίσεων Στόχου"
 
 #. services.AddSiteSettingsPropertyDeploymentStep<ExportContentToDeploymentTargetSettings, ExportContentToDeploymentTargetStartup>(S => S["Export Content To Deployment Target settings"], S => S["Exports the Export Content To Deployment Target settings."]);
-#: OrchardCore.Contents\Deployment\ExportContentToDeploymentTarget\ExportContentToDeploymentTargetStartup.cs:28
+#: OrchardCore.Contents\Deployment\ExportContentToDeploymentTarget\ExportContentToDeploymentTargetStartup.cs:31
 msgctxt "OrchardCore.Contents.Deployment.ExportContentToDeploymentTarget.ExportContentToDeploymentTargetStartup"
 msgid "Export Content To Deployment Target settings"
 msgstr "Εξαγωγή Περιεχομένου στις ρυθμίσεις του Στόχου Ανάπτυξης"
 
 #. services.AddSiteSettingsPropertyDeploymentStep<ExportContentToDeploymentTargetSettings, ExportContentToDeploymentTargetStartup>(S => S["Export Content To Deployment Target settings"], S => S["Exports the Export Content To Deployment Target settings."]);
-#: OrchardCore.Contents\Deployment\ExportContentToDeploymentTarget\ExportContentToDeploymentTargetStartup.cs:28
+#: OrchardCore.Contents\Deployment\ExportContentToDeploymentTarget\ExportContentToDeploymentTargetStartup.cs:31
 msgctxt "OrchardCore.Contents.Deployment.ExportContentToDeploymentTarget.ExportContentToDeploymentTargetStartup"
 msgid "Exports the Export Content To Deployment Target settings."
 msgstr "Εξάγει τις ρυθμίσεις Εξαγωγής Περιεχομένου σε Στόχο ανάπτυξης."
 
 #. context.Updater.ModelState.AddModelError(Prefix, nameof(model.OwnerName), S["A value is required for Owner."]);
-#: OrchardCore.Contents\Drivers\OwnerEditorDriver.cs:81
+#: OrchardCore.Contents\Drivers\OwnerEditorDriver.cs:82
 msgctxt "OrchardCore.Contents.Drivers.OwnerEditorDriver"
 msgid "A value is required for Owner."
 msgstr "Απαιτείται μια τιμή για τον Ιδιοκτήτη."
 
 #. context.Updater.ModelState.AddModelError(Prefix, nameof(model.OwnerName), S["Invalid username provided for Owner."]);
-#: OrchardCore.Contents\Drivers\OwnerEditorDriver.cs:89
+#: OrchardCore.Contents\Drivers\OwnerEditorDriver.cs:90
 msgctxt "OrchardCore.Contents.Drivers.OwnerEditorDriver"
 msgid "Invalid username provided for Owner."
 msgstr "Μη έγκυρο όνομα χρήστη για τον Ιδιοκτήτη."
@@ -421,97 +427,97 @@ msgid "Full-text doesn't contain a valid Liquid expression. Details: {0}"
 msgstr "Το πλήρες κείμενο δεν περιέχει μια έγκυρη έκφραση Liquid. Λεπτομέρειες: {0}"
 
 #. services.AddSiteSettingsPropertyDeploymentStep<ContentAuditTrailSettings, DeploymentStartup>(S => S["Content Audit Trail settings"], S => S["Exports the content audit trail settings."]);
-#: OrchardCore.Contents\Startup.cs:252
+#: OrchardCore.Contents\Startup.cs:328
 msgctxt "OrchardCore.Contents.DeploymentStartup"
 msgid "Content Audit Trail settings"
 msgstr "Ρυθμίσεις διαδρομής ελέγχου περιεχομένου"
 
 #. services.AddSiteSettingsPropertyDeploymentStep<ContentAuditTrailSettings, DeploymentStartup>(S => S["Content Audit Trail settings"], S => S["Exports the content audit trail settings."]);
-#: OrchardCore.Contents\Startup.cs:252
+#: OrchardCore.Contents\Startup.cs:328
 msgctxt "OrchardCore.Contents.DeploymentStartup"
 msgid "Exports the content audit trail settings."
 msgstr "Εξάγει τις ρυθμίσεις της διαδρομής ελέγχου περιεχομένου."
 
 #. public override LocalizedString Category => S["Content"];
-#: OrchardCore.Contents\Workflows\Activities\ContentActivity.cs:38
+#: OrchardCore.Contents\Workflows\Activities\ContentActivity.cs:36
 msgctxt "OrchardCore.Contents.Workflows.Activities.ContentActivity"
 msgid "Content"
 msgstr "Περιεχόμενο"
 
 #. return Outcomes(S["Done"]);
-#: OrchardCore.Contents\Workflows\Activities\ContentActivity.cs:51
+#: OrchardCore.Contents\Workflows\Activities\ContentActivity.cs:49
 msgctxt "OrchardCore.Contents.Workflows.Activities.ContentActivity"
 msgid "Done"
 msgstr "Τέλος"
 
 #. public override LocalizedString DisplayText => S["Content Created Event"];
-#: OrchardCore.Contents\Workflows\Activities\ContentCreatedEvent.cs:19
+#: OrchardCore.Contents\Workflows\Activities\ContentCreatedEvent.cs:15
 msgctxt "OrchardCore.Contents.Workflows.Activities.ContentCreatedEvent"
 msgid "Content Created Event"
 msgstr "Δημιουργημένο Περιεχόμενο Γεγονότων"
 
 #. public override LocalizedString DisplayText => S["Content Deleted Event"];
-#: OrchardCore.Contents\Workflows\Activities\ContentDeletedEvent.cs:19
+#: OrchardCore.Contents\Workflows\Activities\ContentDeletedEvent.cs:15
 msgctxt "OrchardCore.Contents.Workflows.Activities.ContentDeletedEvent"
 msgid "Content Deleted Event"
 msgstr "Διαγραμμένο Περιεχόμενο Γεγονότων"
 
 #. public override LocalizedString DisplayText => S["Content Save Draft Event"];
-#: OrchardCore.Contents\Workflows\Activities\ContentDraftSavedEvent.cs:19
+#: OrchardCore.Contents\Workflows\Activities\ContentDraftSavedEvent.cs:15
 msgctxt "OrchardCore.Contents.Workflows.Activities.ContentDraftSavedEvent"
 msgid "Content Save Draft Event"
 msgstr "Αποθήκευση Προσχεδίου Περιεχομένου Συμβάντος"
 
 #. public override LocalizedString DisplayText => S["Content Published Event"];
-#: OrchardCore.Contents\Workflows\Activities\ContentPublishedEvent.cs:19
+#: OrchardCore.Contents\Workflows\Activities\ContentPublishedEvent.cs:15
 msgctxt "OrchardCore.Contents.Workflows.Activities.ContentPublishedEvent"
 msgid "Content Published Event"
 msgstr "Δημοσιευμένο Περιεχόμενο Γεγονότων"
 
 #. public override LocalizedString DisplayText => S["Content Unpublished Event"];
-#: OrchardCore.Contents\Workflows\Activities\ContentUnpublishedEvent.cs:19
+#: OrchardCore.Contents\Workflows\Activities\ContentUnpublishedEvent.cs:15
 msgctxt "OrchardCore.Contents.Workflows.Activities.ContentUnpublishedEvent"
 msgid "Content Unpublished Event"
 msgstr "Μη Δημοσιευμένο Περιεχόμενο Γεγονότων"
 
 #. public override LocalizedString DisplayText => S["Content Updated Event"];
-#: OrchardCore.Contents\Workflows\Activities\ContentUpdatedEvent.cs:19
+#: OrchardCore.Contents\Workflows\Activities\ContentUpdatedEvent.cs:15
 msgctxt "OrchardCore.Contents.Workflows.Activities.ContentUpdatedEvent"
 msgid "Content Updated Event"
 msgstr "Επικαιροποιημένο Περιεχόμενο Γεγονότων"
 
 #. public override LocalizedString DisplayText => S["Content Versioned Event"];
-#: OrchardCore.Contents\Workflows\Activities\ContentVersionedEvent.cs:18
+#: OrchardCore.Contents\Workflows\Activities\ContentVersionedEvent.cs:15
 msgctxt "OrchardCore.Contents.Workflows.Activities.ContentVersionedEvent"
 msgid "Content Versioned Event"
 msgstr "Versioned Περιεχόμενο Γεγονότων"
 
 #. public override LocalizedString Category => S["Content"];
-#: OrchardCore.Contents\Workflows\Activities\CreateContentTask.cs:33
+#: OrchardCore.Contents\Workflows\Activities\CreateContentTask.cs:36
 msgctxt "OrchardCore.Contents.Workflows.Activities.CreateContentTask"
 msgid "Content"
 msgstr "Περιεχόμενο"
 
 #. public override LocalizedString DisplayText => S["Create Content Task"];
-#: OrchardCore.Contents\Workflows\Activities\CreateContentTask.cs:35
+#: OrchardCore.Contents\Workflows\Activities\CreateContentTask.cs:38
 msgctxt "OrchardCore.Contents.Workflows.Activities.CreateContentTask"
 msgid "Create Content Task"
 msgstr "Δημιουργία Εργασίας Περιεχομένου"
 
-#. get => GetProperty(() => new WorkflowExpression<string>(JConvert.SerializeObject(new { DisplayText = S["Enter a title"].Value }, JOptions.Indented)));
-#: OrchardCore.Contents\Workflows\Activities\CreateContentTask.cs:51
+#. get => GetProperty(() => new WorkflowExpression<string>(JsonConvert.SerializeObject(new { DisplayText = S["Enter a title"].Value }, Formatting.Indented)));
+#: OrchardCore.Contents\Workflows\Activities\CreateContentTask.cs:54
 msgctxt "OrchardCore.Contents.Workflows.Activities.CreateContentTask"
 msgid "Enter a title"
 msgstr "Εισαγάγετε έναν τίτλο"
 
 #. return Outcomes(S["Done"], S["Failed"]);
-#: OrchardCore.Contents\Workflows\Activities\CreateContentTask.cs:62
+#: OrchardCore.Contents\Workflows\Activities\CreateContentTask.cs:65
 msgctxt "OrchardCore.Contents.Workflows.Activities.CreateContentTask"
 msgid "Done"
 msgstr "Τέλος"
 
 #. return Outcomes(S["Done"], S["Failed"]);
-#: OrchardCore.Contents\Workflows\Activities\CreateContentTask.cs:62
+#: OrchardCore.Contents\Workflows\Activities\CreateContentTask.cs:65
 msgctxt "OrchardCore.Contents.Workflows.Activities.CreateContentTask"
 msgid "Failed"
 msgstr "Απέτυχε"
@@ -541,97 +547,97 @@ msgid "Noop"
 msgstr "Όχι"
 
 #. public override LocalizedString DisplayText => S["Publish Content Task"];
-#: OrchardCore.Contents\Workflows\Activities\PublishContentTask.cs:22
+#: OrchardCore.Contents\Workflows\Activities\PublishContentTask.cs:21
 msgctxt "OrchardCore.Contents.Workflows.Activities.PublishContentTask"
 msgid "Publish Content Task"
 msgstr "Δημοσίευση Εργασίας Περιεχομένου"
 
 #. public override LocalizedString Category => S["Content"];
-#: OrchardCore.Contents\Workflows\Activities\PublishContentTask.cs:24
+#: OrchardCore.Contents\Workflows\Activities\PublishContentTask.cs:23
 msgctxt "OrchardCore.Contents.Workflows.Activities.PublishContentTask"
 msgid "Content"
 msgstr "Περιεχόμενο"
 
 #. return Outcomes(S["Published"], S["Noop"]);
-#: OrchardCore.Contents\Workflows\Activities\PublishContentTask.cs:28
+#: OrchardCore.Contents\Workflows\Activities\PublishContentTask.cs:27
 msgctxt "OrchardCore.Contents.Workflows.Activities.PublishContentTask"
 msgid "Published"
 msgstr "Δημοσιεύθηκε"
 
 #. return Outcomes(S["Published"], S["Noop"]);
-#: OrchardCore.Contents\Workflows\Activities\PublishContentTask.cs:28
+#: OrchardCore.Contents\Workflows\Activities\PublishContentTask.cs:27
 msgctxt "OrchardCore.Contents.Workflows.Activities.PublishContentTask"
 msgid "Noop"
 msgstr "Όχι"
 
 #. public override LocalizedString DisplayText => S["Retrieve Content Task"];
-#: OrchardCore.Contents\Workflows\Activities\RetrieveContentTask.cs:23
+#: OrchardCore.Contents\Workflows\Activities\RetrieveContentTask.cs:22
 msgctxt "OrchardCore.Contents.Workflows.Activities.RetrieveContentTask"
 msgid "Retrieve Content Task"
 msgstr "Ανάκτηση εργασίας περιεχομένου"
 
 #. public override LocalizedString Category => S["Content"];
-#: OrchardCore.Contents\Workflows\Activities\RetrieveContentTask.cs:25
+#: OrchardCore.Contents\Workflows\Activities\RetrieveContentTask.cs:24
 msgctxt "OrchardCore.Contents.Workflows.Activities.RetrieveContentTask"
 msgid "Content"
 msgstr "Περιεχόμενο"
 
 #. return Outcomes(S["Retrieved"]);
-#: OrchardCore.Contents\Workflows\Activities\RetrieveContentTask.cs:29
+#: OrchardCore.Contents\Workflows\Activities\RetrieveContentTask.cs:28
 msgctxt "OrchardCore.Contents.Workflows.Activities.RetrieveContentTask"
 msgid "Retrieved"
 msgstr "Ανακτήθηκε"
 
 #. public override LocalizedString DisplayText => S["Unpublish Content Task"];
-#: OrchardCore.Contents\Workflows\Activities\UnpublishContentTask.cs:22
+#: OrchardCore.Contents\Workflows\Activities\UnpublishContentTask.cs:21
 msgctxt "OrchardCore.Contents.Workflows.Activities.UnpublishContentTask"
 msgid "Unpublish Content Task"
 msgstr "Κατάργηση Δημοσίευσης Εργασίας Περιεχομένου"
 
 #. public override LocalizedString Category => S["Content"];
-#: OrchardCore.Contents\Workflows\Activities\UnpublishContentTask.cs:24
+#: OrchardCore.Contents\Workflows\Activities\UnpublishContentTask.cs:23
 msgctxt "OrchardCore.Contents.Workflows.Activities.UnpublishContentTask"
 msgid "Content"
 msgstr "Περιεχόμενο"
 
 #. return Outcomes(S["Unpublished"], S["Noop"]);
-#: OrchardCore.Contents\Workflows\Activities\UnpublishContentTask.cs:28
+#: OrchardCore.Contents\Workflows\Activities\UnpublishContentTask.cs:27
 msgctxt "OrchardCore.Contents.Workflows.Activities.UnpublishContentTask"
 msgid "Unpublished"
 msgstr "Αδημοσίευτο"
 
 #. return Outcomes(S["Unpublished"], S["Noop"]);
-#: OrchardCore.Contents\Workflows\Activities\UnpublishContentTask.cs:28
+#: OrchardCore.Contents\Workflows\Activities\UnpublishContentTask.cs:27
 msgctxt "OrchardCore.Contents.Workflows.Activities.UnpublishContentTask"
 msgid "Noop"
 msgstr "Όχι"
 
 #. public override LocalizedString Category => S["Content"];
-#: OrchardCore.Contents\Workflows\Activities\UpdateContentTask.cs:39
+#: OrchardCore.Contents\Workflows\Activities\UpdateContentTask.cs:41
 msgctxt "OrchardCore.Contents.Workflows.Activities.UpdateContentTask"
 msgid "Content"
 msgstr "Περιεχόμενο"
 
 #. public override LocalizedString DisplayText => S["Update Content Task"];
-#: OrchardCore.Contents\Workflows\Activities\UpdateContentTask.cs:41
+#: OrchardCore.Contents\Workflows\Activities\UpdateContentTask.cs:43
 msgctxt "OrchardCore.Contents.Workflows.Activities.UpdateContentTask"
 msgid "Update Content Task"
 msgstr "Ενημέρωση Εργασίας Περιεχομένου"
 
-#. new WorkflowExpression<string>(JConvert.SerializeObject(new { DisplayText = S["Enter a title"].Value })));
+#. get => GetProperty(() => new WorkflowExpression<string>(JsonConvert.SerializeObject(new { DisplayText = S["Enter a title"].Value }, Formatting.Indented)));
 #: OrchardCore.Contents\Workflows\Activities\UpdateContentTask.cs:59
 msgctxt "OrchardCore.Contents.Workflows.Activities.UpdateContentTask"
 msgid "Enter a title"
 msgstr "Εισαγάγετε έναν τίτλο"
 
 #. return Outcomes(S["Done"], S["Failed"]);
-#: OrchardCore.Contents\Workflows\Activities\UpdateContentTask.cs:67
+#: OrchardCore.Contents\Workflows\Activities\UpdateContentTask.cs:65
 msgctxt "OrchardCore.Contents.Workflows.Activities.UpdateContentTask"
 msgid "Done"
 msgstr "Έτοιμο"
 
 #. return Outcomes(S["Done"], S["Failed"]);
-#: OrchardCore.Contents\Workflows\Activities\UpdateContentTask.cs:67
+#: OrchardCore.Contents\Workflows\Activities\UpdateContentTask.cs:65
 msgctxt "OrchardCore.Contents.Workflows.Activities.UpdateContentTask"
 msgid "Failed"
 msgstr "Απέτυχε"
@@ -883,7 +889,7 @@ msgctxt "OrchardCore.Contents.Views.Items.AuditTrailContentsAction_SummaryAdmin"
 msgid "Audit Trail"
 msgstr "Διαδρομή Ελέγχου"
 
-#. <label asp-for="Comment" class="@Orchard.GetLabelClasses()">@T["Comment"]</label>
+#. <label asp-for="Comment" class="@Orchard.GetLabelCssClasses()">@T["Comment"]</label>
 #: OrchardCore.Contents\Views\AuditTrailPart.Edit.cshtml:6
 msgctxt "OrchardCore.Contents.Views.AuditTrailPart.Edit"
 msgid "Comment"
@@ -913,7 +919,7 @@ msgctxt "OrchardCore.Contents.Views.AuditTrailPartSettings.Edit"
 msgid "Whether the audit trail comment is shown while editing."
 msgstr "Εάν το σχόλιο της διαδρομής ελέγχου εμφανίζεται κατά την επεξεργασία."
 
-#. <label asp-for="LocalDateTime" class="@Orchard.GetLabelClasses()">@T["Created"]</label>
+#. <label asp-for="LocalDateTime" class="@Orchard.GetLabelCssClasses()">@T["Created"]</label>
 #: OrchardCore.Contents\Views\CommonPart-Date.Edit.cshtml:6
 msgctxt "OrchardCore.Contents.Views.CommonPart-Date.Edit"
 msgid "Created"
@@ -925,7 +931,7 @@ msgctxt "OrchardCore.Contents.Views.CommonPart-Date.Edit"
 msgid "The date when the content item was created or first published."
 msgstr "Η ημερομηνία δημιουργίας ή της δημοσίευσης του περιεχομένου."
 
-#. <label asp-for="OwnerName" class="@Orchard.GetLabelClasses()">@T["Owner"]</label>
+#. <label asp-for="OwnerName" class="@Orchard.GetLabelCssClasses()">@T["Owner"]</label>
 #: OrchardCore.Contents\Views\CommonPart-Owner.Edit.cshtml:6
 msgctxt "OrchardCore.Contents.Views.CommonPart-Owner.Edit"
 msgid "Owner"
@@ -961,13 +967,13 @@ msgctxt "OrchardCore.Contents.Views.CommonPartSettings.Edit"
 msgid "Check to be able to edit the owner of the content item. The <code>EditContentOwner</code> permission will also be required."
 msgstr "Επιλέξτε για να μπορείτε να επεξεργαστείτε τον ιδιοκτήτη του στοιχείου περιεχομένου. Θα απαιτείται επίσης η άδεια <code>EditContentOwner</code>."
 
-#. <a class="btn btn-secondary cancel mb-1" role="button" href="@returnUrl">@T["Cancel"]</a>
+#. <a class="btn btn-secondary cancel" role="button" href="@returnUrl">@T["Cancel"]</a>
 #: OrchardCore.Contents\Views\Content.Edit.cshtml:35
 msgctxt "OrchardCore.Contents.Views.Content.Edit"
 msgid "Cancel"
 msgstr "Άκυρο"
 
-#. <button type="submit" name="submit.Publish" class="btn btn-success publish mb-1" value="submit.Publish">@T["Publish"]</button>
+#. <button type="submit" name="submit.Publish" class="btn btn-success publish" value="submit.Publish">@T["Publish"]</button>
 #. <button class="btn btn-success publish" type="submit" name="submit.Publish" value="submit.Publish">@T["Publish"]</button>
 #: OrchardCore.Contents\Views\Content.PublishButton.cshtml:7
 #: OrchardCore.Contents\Views\Content.PublishButton.cshtml:12
@@ -987,7 +993,7 @@ msgctxt "OrchardCore.Contents.Views.Content.PublishButton"
 msgid "and continue"
 msgstr "και συνεχίσε"
 
-#. <button class="primaryAction btn btn-primary draft mb-1" type="submit" name="submit.Save" value="submit.Save">@T["Save Draft"]</button>
+#. <button class="primaryAction btn btn-primary draft" type="submit" name="submit.Save" value="submit.Save">@T["Save Draft"]</button>
 #. <button class="btn btn-primary draft" type="submit" name="submit.Save" value="submit.Save">@T["Save Draft"]</button>
 #: OrchardCore.Contents\Views\Content.SaveDraftButton.cshtml:7
 #: OrchardCore.Contents\Views\Content.SaveDraftButton.cshtml:12
@@ -1021,14 +1027,20 @@ msgctxt "OrchardCore.Contents.Views.Content.SummaryAdmin"
 msgid "Actions"
 msgstr "Δράσεις"
 
-#. <label asp-for="AllowedContentTypes" class="form-label">@T["Allowed content types"]</label>
+#. <label asp-for="AllowedContentTypes">@T["Allowed content types"]</label>
 #: OrchardCore.Contents\Views\Items\ContentAuditTrailSettings.Edit.cshtml:6
 msgctxt "OrchardCore.Contents.Views.Items.ContentAuditTrailSettings.Edit"
 msgid "Allowed content types"
 msgstr "Επιτρεπόμενοι τύποι περιεχομένου"
 
-#. <span class="hint">@T["The types of content whose events are recorded."]</span>
+#. <label class="form-check-label" for="select-all">@T["Select all"]</label>
 #: OrchardCore.Contents\Views\Items\ContentAuditTrailSettings.Edit.cshtml:9
+msgctxt "OrchardCore.Contents.Views.Items.ContentAuditTrailSettings.Edit"
+msgid "Select all"
+msgstr "Επιλογή όλων"
+
+#. <span class="hint">@T["The types of content whose events are recorded."]</span>
+#: OrchardCore.Contents\Views\Items\ContentAuditTrailSettings.Edit.cshtml:15
 msgctxt "OrchardCore.Contents.Views.Items.ContentAuditTrailSettings.Edit"
 msgid "The types of content whose events are recorded."
 msgstr "Τα είδη περιεχομένου των οποίων τα συμβάντα καταγράφονται."
@@ -1045,7 +1057,7 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentCreatedEvent.Fields.Design"
 msgid "Any content type"
 msgstr "Οποιονδήποτε τύπος περιεχομένου"
 
-#. <label asp-for="SelectedContentTypeNames" class="form-label">@T["Content Types"]</label>
+#. <label asp-for="SelectedContentTypeNames">@T["Content Types"]</label>
 #: OrchardCore.Contents\Views\Items\ContentCreatedEvent.Fields.Edit.cshtml:5
 msgctxt "OrchardCore.Contents.Views.Items.ContentCreatedEvent.Fields.Edit"
 msgid "Content Types"
@@ -1081,7 +1093,7 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentDeletedEvent.Fields.Design"
 msgid "Any content type"
 msgstr "Οποιονδήποτε τύπος περιεχομένου"
 
-#. <label asp-for="SelectedContentTypeNames" class="form-label">@T["Content Types"]</label>
+#. <label asp-for="SelectedContentTypeNames">@T["Content Types"]</label>
 #: OrchardCore.Contents\Views\Items\ContentDeletedEvent.Fields.Edit.cshtml:5
 msgctxt "OrchardCore.Contents.Views.Items.ContentDeletedEvent.Fields.Edit"
 msgid "Content Types"
@@ -1141,7 +1153,7 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentDeploymentStep.Fields.Summary"
 msgid "Content"
 msgstr "Περιεχόμενο"
 
-#. <span class="badge text-bg-warning">@T["Nothing here!"]</span>
+#. <span class="badge bg-warning">@T["Nothing here!"]</span>
 #: OrchardCore.Contents\Views\Items\ContentDeploymentStep.Fields.Summary.cshtml:21
 msgctxt "OrchardCore.Contents.Views.Items.ContentDeploymentStep.Fields.Summary"
 msgid "Nothing here!"
@@ -1171,7 +1183,7 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentDraftSavedEvent.Fields.Design"
 msgid "Any content type"
 msgstr "Οποιονδήποτε τύπος περιεχομένου"
 
-#. <label asp-for="SelectedContentTypeNames" class="form-label">@T["Content Types"]</label>
+#. <label asp-for="SelectedContentTypeNames">@T["Content Types"]</label>
 #: OrchardCore.Contents\Views\Items\ContentDraftSavedEvent.Fields.Edit.cshtml:5
 msgctxt "OrchardCore.Contents.Views.Items.ContentDraftSavedEvent.Fields.Edit"
 msgid "Content Types"
@@ -1195,7 +1207,7 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentDraftSavedEvent.Fields.Thumbnai
 msgid "Content Draft is saved."
 msgstr "Το πρόχειρο περιεχομένου είναι αποθηκευμένο."
 
-#. <label asp-for="ContentItemId" class="form-label">@T["Content Item Id"]</label>
+#. <label asp-for="ContentItemId">@T["Content Item Id"]</label>
 #: OrchardCore.Contents\Views\Items\ContentItemDeploymentStep.Fields.Edit.cshtml:3
 msgctxt "OrchardCore.Contents.Views.Items.ContentItemDeploymentStep.Fields.Edit"
 msgid "Content Item Id"
@@ -1213,7 +1225,7 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentItemDeploymentStep.Fields.Summa
 msgid "Content Item"
 msgstr "Αντικείμενα Περιεχομένου"
 
-#. <span class="badge text-bg-warning">@T["Nothing here!"]</span>
+#. <span class="badge bg-warning">@T["Nothing here!"]</span>
 #: OrchardCore.Contents\Views\Items\ContentItemDeploymentStep.Fields.Summary.cshtml:19
 msgctxt "OrchardCore.Contents.Views.Items.ContentItemDeploymentStep.Fields.Summary"
 msgid "Nothing here!"
@@ -1243,7 +1255,7 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentPublishedEvent.Fields.Design"
 msgid "Any content type"
 msgstr "Όλοι οι τύποι περιεχομένου"
 
-#. <label asp-for="SelectedContentTypeNames" class="form-label">@T["Content Types"]</label>
+#. <label asp-for="SelectedContentTypeNames">@T["Content Types"]</label>
 #: OrchardCore.Contents\Views\Items\ContentPublishedEvent.Fields.Edit.cshtml:5
 msgctxt "OrchardCore.Contents.Views.Items.ContentPublishedEvent.Fields.Edit"
 msgid "Content Types"
@@ -1283,7 +1295,7 @@ msgstr "Είστε βέβαιοι(ες) ότι θέλετε να {0} αυτά τ
 #: OrchardCore.Contents\Views\Items\ContentsAdminFilters-ContentType.Thumbnail.cshtml:6
 msgctxt "OrchardCore.Contents.Views.Items.ContentsAdminFilters-ContentType.Thumbnail"
 msgid "Content Type"
-msgstr "Τύπος Περιεχομένου"
+msgstr ""
 
 #. <p>@T["Filters on a specified content type."]</p>
 #: OrchardCore.Contents\Views\Items\ContentsAdminFilters-ContentType.Thumbnail.cshtml:8
@@ -1295,7 +1307,7 @@ msgstr "Φίλτρα σε έναν καθορισμένο τύπο περιεχ�
 #: OrchardCore.Contents\Views\Items\ContentsAdminFilters-DisplayText.Thumbnail.cshtml:6
 msgctxt "OrchardCore.Contents.Views.Items.ContentsAdminFilters-DisplayText.Thumbnail"
 msgid "Display Text"
-msgstr "Εμφάνιση Κειμένου"
+msgstr ""
 
 #. <p>@T["Filters on the Display Text of a content item."]</p>
 #: OrchardCore.Contents\Views\Items\ContentsAdminFilters-DisplayText.Thumbnail.cshtml:8
@@ -1307,7 +1319,7 @@ msgstr "Φίλτρα στο εμφανιζόμενο κείμενο ενός σ�
 #: OrchardCore.Contents\Views\Items\ContentsAdminFilters-Sort.Thumbnail.cshtml:6
 msgctxt "OrchardCore.Contents.Views.Items.ContentsAdminFilters-Sort.Thumbnail"
 msgid "Sort"
-msgstr "Ταξινόμηση"
+msgstr ""
 
 #. <p>@T["Orders by a content item value."]</p>
 #: OrchardCore.Contents\Views\Items\ContentsAdminFilters-Sort.Thumbnail.cshtml:8
@@ -1319,7 +1331,7 @@ msgstr "Ταξινομημένα ανά τιμή στοιχείου περιεχ
 #: OrchardCore.Contents\Views\Items\ContentsAdminFilters-Status.Thumbnail.cshtml:6
 msgctxt "OrchardCore.Contents.Views.Items.ContentsAdminFilters-Status.Thumbnail"
 msgid "Status"
-msgstr "Κατάσταση"
+msgstr ""
 
 #. <p>@T["Filters on a content item status."]</p>
 #: OrchardCore.Contents\Views\Items\ContentsAdminFilters-Status.Thumbnail.cshtml:8
@@ -1331,13 +1343,13 @@ msgstr "Φίλτρα για την κατάσταση ενός στοιχείο�
 #: OrchardCore.Contents\Views\Items\ContentsAdminFilters-Stereotype.Thumbnail.cshtml:6
 msgctxt "OrchardCore.Contents.Views.Items.ContentsAdminFilters-Stereotype.Thumbnail"
 msgid "Content Type Stereotype"
-msgstr "Τύπος Περιεχομένου Στερεότυπου"
+msgstr ""
 
 #. <p>@T["Filters on a specified content type stereotype."]</p>
 #: OrchardCore.Contents\Views\Items\ContentsAdminFilters-Stereotype.Thumbnail.cshtml:8
 msgctxt "OrchardCore.Contents.Views.Items.ContentsAdminFilters-Stereotype.Thumbnail"
 msgid "Filters on a specified content type stereotype."
-msgstr "Φίλτρα σε ένα συγκεκριμένο στερεότυπο τύπου περιεχομένου."
+msgstr ""
 
 #. @T["No results found."]
 #: OrchardCore.Contents\Views\ContentsAdminList.cshtml:46
@@ -1561,7 +1573,7 @@ msgctxt "OrchardCore.Contents.Views.ContentsAdminListSummary"
 msgid "Select All"
 msgstr "Επιλογή Όλων"
 
-#. <label id="items" for="select-all">@T.Plural((int)Model.ContentItemsCount, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", (int)Model.StartIndex, (int)Model.EndIndex]">@T.Plural((int)Model.TotalItemCount, " / 1 item in total", " / {0} items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural((int)Model.ContentItemsCount, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", (int)Model.StartIndex, (int)Model.EndIndex]">@T.Plural((int)Model.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Contents\Views\ContentsAdminListSummary.cshtml:7
 msgctxt "OrchardCore.Contents.Views.ContentsAdminListSummary"
 msgid "1 item"
@@ -1569,19 +1581,19 @@ msgid_plural "{0} items"
 msgstr[0] "1 αντικείμενο"
 msgstr[1] "{0} αντικείμενα"
 
-#. <label id="items" for="select-all">@T.Plural((int)Model.ContentItemsCount, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", (int)Model.StartIndex, (int)Model.EndIndex]">@T.Plural((int)Model.TotalItemCount, " / 1 item in total", " / {0} items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural((int)Model.ContentItemsCount, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", (int)Model.StartIndex, (int)Model.EndIndex]">@T.Plural((int)Model.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Contents\Views\ContentsAdminListSummary.cshtml:7
 msgctxt "OrchardCore.Contents.Views.ContentsAdminListSummary"
 msgid "Items {0} to {1}"
 msgstr "Αντικείμενα {0} έως {1}"
 
-#. <label id="items" for="select-all">@T.Plural((int)Model.ContentItemsCount, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", (int)Model.StartIndex, (int)Model.EndIndex]">@T.Plural((int)Model.TotalItemCount, " / 1 item in total", " / {0} items in total")</span></label>
+#. <label id="items" for="select-all">@T.Plural((int)Model.ContentItemsCount, "1 item", "{0} items")<span class="text-muted" title="@T["Items {0} to {1}", (int)Model.StartIndex, (int)Model.EndIndex]">@T.Plural((int)Model.TotalItemCount, " / {0} item in total", " / {0} items in total")</span></label>
 #: OrchardCore.Contents\Views\ContentsAdminListSummary.cshtml:7
 msgctxt "OrchardCore.Contents.Views.ContentsAdminListSummary"
-msgid " / 1 item in total"
+msgid " / {0} item in total"
 msgid_plural " / {0} items in total"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] " / {0} αντικείμενο συνολικά"
+msgstr[1] " / {0} αντικείμενα συνολικά"
 
 #. <a asp-action="Publish" asp-controller="Admin" asp-route-area="OrchardCore.Contents" asp-route-contentItemId="@contentItem.ContentItemId" asp-route-returnUrl="@FullRequestPath" data-url-af="UnsafeUrl" class="dropdown-item btn-sm">@T["Publish Draft"]</a>
 #: OrchardCore.Contents\Views\ContentsButtonActions_SummaryAdmin.cshtml:19
@@ -1723,7 +1735,7 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentTypesAdminNode.Fields.TreeEdit"
 msgid "Show All Content Types"
 msgstr "Εμφάνιση όλων των τύπων περιεχομένου"
 
-#. <label asp-for="IconClass" class="form-label">@T["Default Icon"]</label>
+#. <label asp-for="IconClass">@T["Default Icon"]</label>
 #: OrchardCore.Contents\Views\Items\ContentTypesAdminNode.Fields.TreeEdit.cshtml:27
 msgctxt "OrchardCore.Contents.Views.Items.ContentTypesAdminNode.Fields.TreeEdit"
 msgid "Default Icon"
@@ -1765,13 +1777,13 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentTypesAdminNode.Fields.TreeEdit"
 msgid "Pick an icon"
 msgstr "Διαλέξτε εικονίδιο"
 
-#. <span class="badge text-bg-success">@T["Show all Content Types"]</span>
+#. <span class="badge bg-success">@T["Show all Content Types"]</span>
 #: OrchardCore.Contents\Views\Items\ContentTypesAdminNode.Fields.TreeSummary.cshtml:26
 msgctxt "OrchardCore.Contents.Views.Items.ContentTypesAdminNode.Fields.TreeSummary"
 msgid "Show all Content Types"
 msgstr "Εμφάνιση όλων των Τύπων Περιεχομένου"
 
-#. <span class="badge text-bg-warning">@T["Nothing here!"]</span>
+#. <span class="badge bg-warning">@T["Nothing here!"]</span>
 #: OrchardCore.Contents\Views\Items\ContentTypesAdminNode.Fields.TreeSummary.cshtml:39
 msgctxt "OrchardCore.Contents.Views.Items.ContentTypesAdminNode.Fields.TreeSummary"
 msgid "Nothing here!"
@@ -1821,9 +1833,9 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentTypesSitemapSource.Edit"
 msgid "Limit the amount of content items to provide from this source. Note: Only one content type is selectable when this option is selected."
 msgstr "Περιόρισε τον αριθμό των στοιχείων περιεχομένου που θα παρέχονται από αυτήν την πηγή. Σημείωση: Μόνο ένας τύπος περιεχομένου είναι επιλέξιμος όταν έχει επιλεγεί αυτή η επιλογή."
 
-#. <label asp-for="ChangeFrequency" class="form-label">@T["Change Frequency"] </label>
-#. <label asp-for="ContentTypes[i].ChangeFrequency" class="form-label">@T["Change Frequency"] </label>
-#. <label asp-for="LimitedContentTypes[i].ChangeFrequency" class="form-label">@T["Change Frequency"] </label>
+#. <label asp-for="ChangeFrequency">@T["Change Frequency"] </label>
+#. <label asp-for="ContentTypes[i].ChangeFrequency">@T["Change Frequency"] </label>
+#. <label asp-for="LimitedContentTypes[i].ChangeFrequency">@T["Change Frequency"] </label>
 #: OrchardCore.Contents\Views\Items\ContentTypesSitemapSource.Edit.cshtml:26
 #: OrchardCore.Contents\Views\Items\ContentTypesSitemapSource.Edit.cshtml:77
 #: OrchardCore.Contents\Views\Items\ContentTypesSitemapSource.Edit.cshtml:135
@@ -1837,9 +1849,9 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentTypesSitemapSource.Edit"
 msgid "The default frequency with which these content types are likely to change."
 msgstr "Η προεπιλεγμένη συχνότητα με την οποία είναι πιθανό να αλλάξουν αυτοί οι τύποι περιεχομένου."
 
-#. <label asp-for="Priority" class="form-label">@T["Priority"] </label>
-#. <label asp-for="ContentTypes[i].Priority" class="form-label">@T["Priority"] </label>
-#. <label asp-for="LimitedContentTypes[i].Priority" class="form-label">@T["Priority"] </label>
+#. <label asp-for="Priority">@T["Priority"] </label>
+#. <label asp-for="ContentTypes[i].Priority">@T["Priority"] </label>
+#. <label asp-for="LimitedContentTypes[i].Priority">@T["Priority"] </label>
 #: OrchardCore.Contents\Views\Items\ContentTypesSitemapSource.Edit.cshtml:31
 #: OrchardCore.Contents\Views\Items\ContentTypesSitemapSource.Edit.cshtml:84
 #: OrchardCore.Contents\Views\Items\ContentTypesSitemapSource.Edit.cshtml:142
@@ -2015,7 +2027,7 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentTypesSitemapSource.SummaryAdmin
 msgid "All"
 msgstr "Όλα"
 
-#. <span class="badge text-bg-warning">@T["Nothing here!"]</span>
+#. <span class="badge bg-warning">@T["Nothing here!"]</span>
 #: OrchardCore.Contents\Views\Items\ContentTypesSitemapSource.SummaryAdmin.cshtml:36
 msgctxt "OrchardCore.Contents.Views.Items.ContentTypesSitemapSource.SummaryAdmin"
 msgid "Nothing here!"
@@ -2051,7 +2063,7 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentUnpublishedEvent.Fields.Design"
 msgid "Any content type"
 msgstr "Κάθε τύπος περιεχομένου"
 
-#. <label asp-for="SelectedContentTypeNames" class="form-label">@T["Content Types"]</label>
+#. <label asp-for="SelectedContentTypeNames">@T["Content Types"]</label>
 #: OrchardCore.Contents\Views\Items\ContentUnpublishedEvent.Fields.Edit.cshtml:5
 msgctxt "OrchardCore.Contents.Views.Items.ContentUnpublishedEvent.Fields.Edit"
 msgid "Content Types"
@@ -2087,7 +2099,7 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentUpdatedEvent.Fields.Design"
 msgid "Any content type"
 msgstr "Κάθε τύπος περιεχομένου"
 
-#. <label asp-for="SelectedContentTypeNames" class="form-label">@T["Content Types"]</label>
+#. <label asp-for="SelectedContentTypeNames">@T["Content Types"]</label>
 #: OrchardCore.Contents\Views\Items\ContentUpdatedEvent.Fields.Edit.cshtml:5
 msgctxt "OrchardCore.Contents.Views.Items.ContentUpdatedEvent.Fields.Edit"
 msgid "Content Types"
@@ -2123,7 +2135,7 @@ msgctxt "OrchardCore.Contents.Views.Items.ContentVersionedEvent.Fields.Design"
 msgid "Any content type"
 msgstr "Κάθε τύπος περιεχομένου"
 
-#. <label asp-for="SelectedContentTypeNames" class="form-label">@T["Content Types"]</label>
+#. <label asp-for="SelectedContentTypeNames">@T["Content Types"]</label>
 #: OrchardCore.Contents\Views\Items\ContentVersionedEvent.Fields.Edit.cshtml:5
 msgctxt "OrchardCore.Contents.Views.Items.ContentVersionedEvent.Fields.Edit"
 msgid "Content Types"
@@ -2159,7 +2171,7 @@ msgctxt "OrchardCore.Contents.Views.Items.CreateContentTask.Fields.Design"
 msgid "Create Content"
 msgstr "Δημιουργία Περιεχομένου"
 
-#. <label asp-for="ContentType" class="form-label">@T["Content Type"]</label>
+#. <label asp-for="ContentType">@T["Content Type"]</label>
 #: OrchardCore.Contents\Views\Items\CreateContentTask.Fields.Edit.cshtml:5
 msgctxt "OrchardCore.Contents.Views.Items.CreateContentTask.Fields.Edit"
 msgid "Content Type"
@@ -2183,7 +2195,7 @@ msgctxt "OrchardCore.Contents.Views.Items.CreateContentTask.Fields.Edit"
 msgid "Check if you want the content item to be published when being created. Leave unchecked to create a draft version."
 msgstr "Επίλεξε, αν θέλεις να δημοσιεύεται το περιεχόμενο κατά τη δημιουργία του. Από-επίλεξε για να δημιουργήσεις μια έκδοση προσχέδιου."
 
-#. <label asp-for="ContentProperties" class="form-label">@T["Content Properties"]</label>
+#. <label asp-for="ContentProperties">@T["Content Properties"]</label>
 #: OrchardCore.Contents\Views\Items\CreateContentTask.Fields.Edit.cshtml:20
 msgctxt "OrchardCore.Contents.Views.Items.CreateContentTask.Fields.Edit"
 msgid "Content Properties"
@@ -2207,12 +2219,6 @@ msgctxt "OrchardCore.Contents.Views.Items.CreateContentTask.Fields.Thumbnail"
 msgid "Create a content item."
 msgstr "Δημιουργήστε ένα στοιχείο περιεχομένου."
 
-#. <label class="form-check-label" for="@(Model.HtmlName)-select-all">@T["Select all"]</label>
-#: OrchardCore.Contents\Views\Shared\Components\SelectContentTypes\Default.cshtml:8
-msgctxt "OrchardCore.Contents.Views.Shared.Components.SelectContentTypes.Default"
-msgid "Select all"
-msgstr ""
-
 #. <h4><i class="fa-solid fa-trash" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Delete Content"])</h4>
 #: OrchardCore.Contents\Views\Items\DeleteContentTask.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Contents.Views.Items.DeleteContentTask.Fields.Design"
@@ -2231,7 +2237,7 @@ msgctxt "OrchardCore.Contents.Views.Items.DeleteContentTask.Fields.Design"
 msgid "Delete content using expression: <em>{0}</em>"
 msgstr "Διαγράψτε το περιεχόμενο χρησιμοποιώντας την έκφραση: <em>{0}</em>"
 
-#. <label asp-for="Expression" class="form-label">@T["Expression"]</label>
+#. <label asp-for="Expression">@T["Expression"]</label>
 #: OrchardCore.Contents\Views\Items\DeleteContentTask.Fields.Edit.cshtml:5
 msgctxt "OrchardCore.Contents.Views.Items.DeleteContentTask.Fields.Edit"
 msgid "Expression"
@@ -2279,37 +2285,37 @@ msgctxt "OrchardCore.Contents.Views.Download.Display"
 msgid "Cancel"
 msgstr "Άκυρο"
 
-#. <a asp-action="Display" asp-controller="Download" asp-area="OrchardCore.Contents" asp-route-contentItemId="@contentItem.ContentItemId" asp-route-returnUrl="@FullRequestPath" asp-route-latest="true" class="dropdown-item">@T["View Draft as JSON"]</a>
+#. <a asp-action="Display" asp-controller="Download" asp-area="OrchardCore.Contents" asp-route-contentItemId="@contentItem.ContentItemId" asp-route-returnUrl="@FullRequestPath" asp-route-latest="true" class="dropdown-item btn btn-primary btn-sm">@T["View Draft as JSON"]</a>
 #: OrchardCore.Contents\Views\Items\Download-Button-Actions.SummaryAdmin.cshtml:15
 msgctxt "OrchardCore.Contents.Views.Items.Download-Button-Actions.SummaryAdmin"
 msgid "View Draft as JSON"
 msgstr "Προβολή πρόχειρου ως JSON"
 
-#. <a id="@exportDraftId" asp-action="Download" asp-controller="Download" asp-area="OrchardCore.Contents" asp-route-contentItemId="@contentItem.ContentItemId" asp-route-latest="@bool.TrueString" class="dropdown-item" data-url-af="UnsafeUrl">@T["Download Draft as JSON"]</a>
+#. <a id="@exportDraftId" asp-action="Download" asp-controller="Download" asp-area="OrchardCore.Contents" asp-route-contentItemId="@contentItem.ContentItemId" asp-route-latest="@Boolean.TrueString" class="dropdown-item btn btn-primary btn-sm" data-url-af="UnsafeUrl">@T["Download Draft as JSON"]</a>
 #: OrchardCore.Contents\Views\Items\Download-Button-Actions.SummaryAdmin.cshtml:16
 msgctxt "OrchardCore.Contents.Views.Items.Download-Button-Actions.SummaryAdmin"
 msgid "Download Draft as JSON"
 msgstr "Λήψη Προσχεδίου ως JSON"
 
-#. <a asp-action="Display" asp-controller="Download" asp-area="OrchardCore.Contents" asp-route-contentItemId="@contentItem.ContentItemId" asp-route-returnUrl="@FullRequestPath" class="dropdown-item">@T["View Published as JSON"]</a>
+#. <a asp-action="Display" asp-controller="Download" asp-area="OrchardCore.Contents" asp-route-contentItemId="@contentItem.ContentItemId" asp-route-returnUrl="@FullRequestPath" class="dropdown-item btn btn-primary btn-sm">@T["View Published as JSON"]</a>
 #: OrchardCore.Contents\Views\Items\Download-Button-Actions.SummaryAdmin.cshtml:22
 msgctxt "OrchardCore.Contents.Views.Items.Download-Button-Actions.SummaryAdmin"
 msgid "View Published as JSON"
 msgstr "Δείτε τη δημοσιευμένη έκδοση σε μορφή JSON"
 
-#. <a id="@exportPublishedId" asp-action="Download" asp-controller="Download" asp-area="OrchardCore.Contents" asp-route-contentItemId="@contentItem.ContentItemId" class="dropdown-item" data-url-af="UnsafeUrl">@T["Download Published as JSON"]</a>
+#. <a id="@exportPublishedId" asp-action="Download" asp-controller="Download" asp-area="OrchardCore.Contents" asp-route-contentItemId="@contentItem.ContentItemId" class="dropdown-item btn btn-primary btn-sm" data-url-af="UnsafeUrl">@T["Download Published as JSON"]</a>
 #: OrchardCore.Contents\Views\Items\Download-Button-Actions.SummaryAdmin.cshtml:23
 msgctxt "OrchardCore.Contents.Views.Items.Download-Button-Actions.SummaryAdmin"
 msgid "Download Published as JSON"
 msgstr "Η λήψη Δημοσιεύτηκε ως JSON"
 
-#. <a asp-action="Display" asp-controller="Download" asp-area="OrchardCore.Contents" asp-route-contentItemId="@contentItem.ContentItemId" asp-route-returnUrl="@FullRequestPath" class="dropdown-item">@T["View as JSON"]</a>
+#. <a asp-action="Display" asp-controller="Download" asp-area="OrchardCore.Contents" asp-route-contentItemId="@contentItem.ContentItemId" asp-route-returnUrl="@FullRequestPath" class="dropdown-item btn btn-primary btn-sm">@T["View as JSON"]</a>
 #: OrchardCore.Contents\Views\Items\Download-Button-Actions.SummaryAdmin.cshtml:28
 msgctxt "OrchardCore.Contents.Views.Items.Download-Button-Actions.SummaryAdmin"
 msgid "View as JSON"
 msgstr "Προβολή ως JSON"
 
-#. <a id="@exportId" asp-action="Download" asp-controller="Download" asp-area="OrchardCore.Contents" asp-route-contentItemId="@contentItem.ContentItemId" class="dropdown-item" data-url-af="UnsafeUrl">@T["Download as JSON"]</a>
+#. <a id="@exportId" asp-action="Download" asp-controller="Download" asp-area="OrchardCore.Contents" asp-route-contentItemId="@contentItem.ContentItemId" class="dropdown-item btn btn-primary btn-sm" data-url-af="UnsafeUrl">@T["Download as JSON"]</a>
 #: OrchardCore.Contents\Views\Items\Download-Button-Actions.SummaryAdmin.cshtml:29
 msgctxt "OrchardCore.Contents.Views.Items.Download-Button-Actions.SummaryAdmin"
 msgid "Download as JSON"
@@ -2339,7 +2345,7 @@ msgctxt "OrchardCore.Contents.Views.Items.ExportContentToDeploymentTarget-Action
 msgid "Cancel"
 msgstr "Άκυρο"
 
-#. <button class="dropdown-item btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#modalExportContentToDeploymentTargetActionTarget" data-content-item-id="@contentItem.ContentItemId" data-latest=@bool.TrueString>@T["Export Draft to Deployment Target"]</button>
+#. <button class="dropdown-item btn-sm" type="button" data-bs-toggle="modal" data-bs-target="#modalExportContentToDeploymentTargetActionTarget" data-content-item-id="@contentItem.ContentItemId" data-latest=@Boolean.TrueString>@T["Export Draft to Deployment Target"]</button>
 #: OrchardCore.Contents\Views\Items\ExportContentToDeploymentTarget-Button-Actions.SummaryAdmin.cshtml:13
 msgctxt "OrchardCore.Contents.Views.Items.ExportContentToDeploymentTarget-Button-Actions.SummaryAdmin"
 msgid "Export Draft to Deployment Target"
@@ -2429,7 +2435,7 @@ msgctxt "OrchardCore.Contents.Views.Items.ExportContentToDeploymentTargetSetting
 msgid "No export content to deployment target plans found. Create a deployment plan and add a Export content to deployment target step to it."
 msgstr "Δεν βρέθηκε περιεχόμενο εξαγωγής σε σχέδια στόχων ανάπτυξης. Δημιουργήστε ένα σχέδιο ανάπτυξης και προσθέστε σε αυτό ένα βήμα εξαγωγής περιεχομένου στο στόχο ανάπτυξης."
 
-#. <label asp-for="ExportContentToDeploymentTargetPlanId" class="form-label">@T["Deployment Plan"]</label>
+#. <label asp-for="ExportContentToDeploymentTargetPlanId">@T["Deployment Plan"]</label>
 #: OrchardCore.Contents\Views\Items\ExportContentToDeploymentTargetSettings.Edit.cshtml:18
 msgctxt "OrchardCore.Contents.Views.Items.ExportContentToDeploymentTargetSettings.Edit"
 msgid "Deployment Plan"
@@ -2505,8 +2511,8 @@ msgctxt "OrchardCore.Contents.Views.NavigationItemText-content.Id"
 msgid "Content"
 msgstr "Περιεχόμενο"
 
-#. <span class="title">@T["New"]</span>
-#: OrchardCore.Contents\Views\NavigationItemText-new.Id.cshtml:4
+#. <span class="icon"><i class="far fa-plus-square" aria-hidden="true"></i></span><span class="title">@T["New"]</span>
+#: OrchardCore.Contents\Views\NavigationItemText-new.Id.cshtml:1
 msgctxt "OrchardCore.Contents.Views.NavigationItemText-new.Id"
 msgid "New"
 msgstr "Νέο"
@@ -2529,7 +2535,7 @@ msgctxt "OrchardCore.Contents.Views.Items.PublishContentTask.Fields.Design"
 msgid "Publish content using expression: <em>{0}</em>"
 msgstr "Δημοσιεύστε το περιεχόμενο χρησιμοποιώντας την έκφραση: <em>{0}</em>"
 
-#. <label asp-for="Expression" class="form-label">@T["Expression"]</label>
+#. <label asp-for="Expression">@T["Expression"]</label>
 #: OrchardCore.Contents\Views\Items\PublishContentTask.Fields.Edit.cshtml:5
 msgctxt "OrchardCore.Contents.Views.Items.PublishContentTask.Fields.Edit"
 msgid "Expression"
@@ -2571,7 +2577,7 @@ msgctxt "OrchardCore.Contents.Views.Items.RetrieveContentTask.Fields.Design"
 msgid "Retrieve content using expression: <em>{0}</em>"
 msgstr "Ανάκτηση περιεχομένου με χρήση έκφρασης: <em>{0}</em>"
 
-#. <label asp-for="ContentItemId" class="form-label">@T["Content Item ID"]</label>
+#. <label asp-for="ContentItemId">@T["Content Item ID"]</label>
 #: OrchardCore.Contents\Views\Items\RetrieveContentTask.Fields.Edit.cshtml:5
 msgctxt "OrchardCore.Contents.Views.Items.RetrieveContentTask.Fields.Edit"
 msgid "Content Item ID"
@@ -2613,7 +2619,7 @@ msgctxt "OrchardCore.Contents.Views.Items.UnpublishContentTask.Fields.Design"
 msgid "Unpublish content using expression: <em>{0}</em>"
 msgstr "Κατάργηση δημοσίευσης περιεχομένου χρησιμοποιώντας την έκφραση: <em>{0}</em>"
 
-#. <label asp-for="Expression" class="form-label">@T["Expression"]</label>
+#. <label asp-for="Expression">@T["Expression"]</label>
 #: OrchardCore.Contents\Views\Items\UnpublishContentTask.Fields.Edit.cshtml:5
 msgctxt "OrchardCore.Contents.Views.Items.UnpublishContentTask.Fields.Edit"
 msgid "Expression"
@@ -2637,7 +2643,7 @@ msgctxt "OrchardCore.Contents.Views.Items.UnpublishContentTask.Fields.Thumbnail"
 msgid "Unpublish a content item."
 msgstr "Κατάργηση δημοσίευσης ενός στοιχείου περιεχομένου."
 
-#. <h4><i class="fa-solid fa-square-pen" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Update Content"])</h4>
+#. <h4><i class="fa-solid fa-pencil-square-o" aria-hidden="true"></i>@Model.Activity.GetTitleOrDefault(() => T["Update Content"])</h4>
 #: OrchardCore.Contents\Views\Items\UpdateContentTask.Fields.Design.cshtml:4
 msgctxt "OrchardCore.Contents.Views.Items.UpdateContentTask.Fields.Design"
 msgid "Update Content"
@@ -2655,7 +2661,7 @@ msgctxt "OrchardCore.Contents.Views.Items.UpdateContentTask.Fields.Design"
 msgid "Update content using expression: <em>{0}</em>"
 msgstr "Ενημερώστε το περιεχόμενο χρησιμοποιώντας έκφραση: <em>{0}</em>"
 
-#. <label asp-for="ContentItemIdExpression" class="form-label">@T["Content Item ID"]</label>
+#. <label asp-for="ContentItemIdExpression">@T["Content Item ID"]</label>
 #: OrchardCore.Contents\Views\Items\UpdateContentTask.Fields.Edit.cshtml:5
 msgctxt "OrchardCore.Contents.Views.Items.UpdateContentTask.Fields.Edit"
 msgid "Content Item ID"
@@ -2667,7 +2673,7 @@ msgctxt "OrchardCore.Contents.Views.Items.UpdateContentTask.Fields.Edit"
 msgid "Enter a JavaScript expression that evaluates to the Content Item's ID (ContentItemId) to be updated. For example: correlationId()."
 msgstr "Εισαγάγετε μια έκφραση JavaScript που αξιολογείται στο αναγνωριστικό του στοιχείου περιεχομένου (ContentItemId) που πρόκειται να ενημερωθεί. Για παράδειγμα: correlationId()."
 
-#. <label asp-for="ContentProperties" class="form-label">@T["Content Properties"]</label>
+#. <label asp-for="ContentProperties">@T["Content Properties"]</label>
 #: OrchardCore.Contents\Views\Items\UpdateContentTask.Fields.Edit.cshtml:12
 msgctxt "OrchardCore.Contents.Views.Items.UpdateContentTask.Fields.Edit"
 msgid "Content Properties"
@@ -2691,7 +2697,7 @@ msgctxt "OrchardCore.Contents.Views.Items.UpdateContentTask.Fields.Edit"
 msgid "Check if you want the content item to be published when being updated. Leave unchecked to create a draft version."
 msgstr "Ελέγξτε εάν θέλετε το στοιχείο περιεχομένου να δημοσιεύεται κατά την ενημέρωση. Αφήστε μη επιλεγμένο για να δημιουργήσετε μια πρόχειρη έκδοση."
 
-#. <h4 class="card-title"><i class="fa-solid fa-square-pen" aria-hidden="true"></i>@T["Update Content"]</h4>
+#. <h4 class="card-title"><i class="fa-solid fa-pencil-square-o" aria-hidden="true"></i>@T["Update Content"]</h4>
 #: OrchardCore.Contents\Views\Items\UpdateContentTask.Fields.Thumbnail.cshtml:1
 msgctxt "OrchardCore.Contents.Views.Items.UpdateContentTask.Fields.Thumbnail"
 msgid "Update Content"

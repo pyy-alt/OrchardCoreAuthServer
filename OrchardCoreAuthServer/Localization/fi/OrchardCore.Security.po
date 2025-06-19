@@ -10,158 +10,164 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Language-Team: Finnish\n"
 "Language: fi_FI\n"
-"PO-Revision-Date: 2024-09-09 16:41\n"
+"PO-Revision-Date: 2023-04-03 10:19\n"
 
-#. .Add(S["Security"], NavigationConstants.AdminMenuSecurityPosition, security => security
-#: OrchardCore.Security\AdminMenu.cs:27
+#. builder.Add(S["Security"], NavigationConstants.AdminMenuSecurityPosition, security => security
+#: OrchardCore.Security\AdminMenu.cs:22
 msgctxt "OrchardCore.Security.AdminMenu"
 msgid "Security"
 msgstr "Turvallisuus"
 
 #. .Add(S["Settings"], settings => settings
-#: OrchardCore.Security\AdminMenu.cs:30
+#: OrchardCore.Security\AdminMenu.cs:24
 msgctxt "OrchardCore.Security.AdminMenu"
 msgid "Settings"
 msgstr "Asetukset"
 
 #. .Add(S["Security Headers"], S["Security Headers"].PrefixPosition(), headers => headers
 #. .Add(S["Security Headers"], S["Security Headers"].PrefixPosition(), headers => headers
-#: OrchardCore.Security\AdminMenu.cs:31
-#: OrchardCore.Security\AdminMenu.cs:31
+#: OrchardCore.Security\AdminMenu.cs:25
+#: OrchardCore.Security\AdminMenu.cs:25
 msgctxt "OrchardCore.Security.AdminMenu"
 msgid "Security Headers"
 msgstr "Turvallisuustunnisteet"
 
+#. @T["The current tenant will be reloaded when the settings are saved."]
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:165
+msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
+msgid "The current tenant will be reloaded when the settings are saved."
+msgstr ""
+
 #. @T["The current settings are coming from configuration sources, saving the settings will affect the AdminSettings not the configuration."]
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:167
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:171
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "The current settings are coming from configuration sources, saving the settings will affect the AdminSettings not the configuration."
 msgstr ""
 
-#. <label asp-for="ContentSecurityPolicy" class="form-label">@T["Content Security Policy"]</label>
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:172
+#. <label asp-for="ContentSecurityPolicy">@T["Content Security Policy"]</label>
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:176
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Content Security Policy"
 msgstr "Sisällön turvallisuuskäytäntö"
 
 #. <label class="form-check-label" asp-for="EnableSandbox">@T["Enable Sandbox"]</label>
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:176
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:180
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Enable Sandbox"
 msgstr "Ota hiekkalaatikko käyttöön"
 
 #. <span class="hint dashed">@T["Enables a sandbox for the requested resource similar to the iframe sandbox attribute."]</span>
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:177
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:181
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Enables a sandbox for the requested resource similar to the iframe sandbox attribute."
 msgstr ""
 
 #. <label class="form-check-label" asp-for="UpgradeInsecureRequests">@T["Upgrade Insecure Requests"]</label>
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:183
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:187
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Upgrade Insecure Requests"
 msgstr ""
 
 #. <th>@T["Name"]</th>
 #. <th>@T["Name"]</th>
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:189
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:216
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:193
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:220
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Name"
 msgstr "Nimi"
 
 #. <span class="hint">@T["Allows administrators to control resources the user agent is allowed to load for a given page."]</span>
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:209
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:213
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Allows administrators to control resources the user agent is allowed to load for a given page."
 msgstr ""
 
-#. <label asp-for="PermissionsPolicy" class="form-label">@T["Permissions Policy"]</label>
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:212
+#. <label asp-for="PermissionsPolicy">@T["Permissions Policy"]</label>
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:216
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Permissions Policy"
 msgstr "Käyttöoikeuksien käytännöt"
 
 #. <th>@T["None"]</th>
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:217
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:221
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "None"
 msgstr "Ei mitään"
 
 #. <th>@T["Any"]</th>
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:218
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:222
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Any"
 msgstr "Kaikki"
 
 #. <th>@T["Self"]</th>
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:219
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:223
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Self"
 msgstr "Itse"
 
 #. <span class="hint">@T["Allows a site to control which features and APIs can be used in the browser."]</span>
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:267
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:271
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Allows a site to control which features and APIs can be used in the browser."
 msgstr ""
 
-#. <label asp-for="ReferrerPolicy" class="form-label">@T["Referrer Policy"]</label>
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:270
+#. <label asp-for="ReferrerPolicy">@T["Referrer Policy"]</label>
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:274
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Referrer Policy"
 msgstr "Viitauskäytännöt"
 
 #. @T["No referrer"]
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:273
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:277
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "No referrer"
 msgstr "Ei viittauksia"
 
 #. @T["No referrer when downgrade"]
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:276
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:280
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "No referrer when downgrade"
 msgstr ""
 
 #. @T["Origin"]
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:279
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:283
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Origin"
 msgstr "Alkuperä"
 
 #. @T["Origin when cross origin"]
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:282
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:286
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Origin when cross origin"
 msgstr "Alkuperä, kun on rajat ylittävä alkuperä"
 
 #. @T["Same origin"]
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:285
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:289
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Same origin"
 msgstr "Sama alkuperä"
 
 #. @T["Strict origin"]
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:288
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:292
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Strict origin"
 msgstr "Tiukka alkuperä"
 
 #. @T["Strict origin when cross origin"]
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:291
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:295
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Strict origin when cross origin"
 msgstr "Tiukka alkuperä, kun on rajat ylittävä alkuperä"
 
 #. @T["Unsafe URL"]
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:294
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:298
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Unsafe URL"
 msgstr "Epäturvallinen URL-osoite"
 
 #. <span class="hint">@T["Allows a site to control how much information the browser includes when navigating away from a page."]</span>
-#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:298
+#: OrchardCore.Security\Views\SecurityHeadersSettings.Edit.cshtml:302
 msgctxt "OrchardCore.Security.Views.SecurityHeadersSettings.Edit"
 msgid "Allows a site to control how much information the browser includes when navigating away from a page."
 msgstr ""
